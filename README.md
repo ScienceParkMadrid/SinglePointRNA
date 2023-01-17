@@ -49,6 +49,6 @@ After installing R, RStudio, and the R libraries stated above:
 * Click the "Run App" button at the top of the source pane.
 
 
-It's also possible to run SinglePoint in a remote server using [Shiny Server](https://posit.co/products/open-source/shinyserver/)
+It's also possible to run SinglePoint RNA in a remote server using [Shiny Server](https://posit.co/products/open-source/shinyserver/)
 
 
