@@ -1,0 +1,5 @@
+# Patrones para reconocer Gene symbols de genes mitocondriales y ribosomales
+Hsapiens: "^MT-", "^RP[SL]"
+Mmusculus: "^mt-", "^Rp[sl]"
+Rnorvegicus: "^Mt-", "^Rp[sl]"
+Drerio: "^mt-", "^rp[sl]"

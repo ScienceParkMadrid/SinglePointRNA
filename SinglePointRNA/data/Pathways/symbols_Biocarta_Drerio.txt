@@ -1,0 +1,292 @@
+BIOCARTA_GRANULOCYTES_PATHWAY: ifng1, csf3b, selp, tnfb, itgb2, si:dkey-237i9.8, c5
+BIOCARTA_LYM_PATHWAY: vcam1b, si:dkey-261h17.1, itgb2, si:dkey-237i9.8, itga4, itgb1a
+BIOCARTA_BLYMPHOCYTE_PATHWAY: itgb2, csmd2
+BIOCARTA_CARM_ER_PATHWAY: hdac6, hdac4, hdac1, ncor2, nrip1b, esr1, nr0b1, carm1, hdac5, crebbpa, phb2b, grip1, ep300a, ccnd1, ppargc1a, spen, tbp, gtf2a1, med1, zgc:113984, mef2cb, sra1
+BIOCARTA_LAIR_PATHWAY: selp, c7b, vcam1b, tnfb, itgb2, itga4, c6, c5, c3a.5, itgb1a
+BIOCARTA_VDR_PATHWAY: prmt1, chaf1a, smarcd1, hdac1, tsc2, supt16h, smarcc2, carm1, smarca4a, cops2, actl6a, crebbpa, ncor1, arid1ab, top2b, smarcc1a, ep300a, vdrb, kat2b, rxrab, ncoa1, med1, smarce1, baz1b
+BIOCARTA_MTA3_PATHWAY: snai1a, tuba8l2, hdac1, mbd3a, esr1, tuba7l, pdzk1, si:dkey-30c15.12, greb1, aldoaa, hspb1, mta1, gapdh, tuba1a, ctsd, hspb2
+BIOCARTA_GABA_PATHWAY: gabra5, gabra6a, gabra2a, gabra3, gabra1, gphnb, gabra4, nsfb
+BIOCARTA_EGFR_SMRTE_PATHWAY: thrab, ncor2, map2k1, thrb, egf, mapk14b, egfra, rxrab, zbtb16a, map3k1
+BIOCARTA_MONOCYTE_PATHWAY: selp, selp, itgb2, si:dkey-237i9.8, itga4, cd44a, itgb1a
+BIOCARTA_RARRXR_PATHWAY: ncor2, kat2b, tbp, rxrab, gtf2a1, ncoa1
+BIOCARTA_NUCLEARRS_PATHWAY: cyp1a, rarga, cyp4t8, nr1i2, cyp24a1, pparab, abcd2, abcg1, abcg5, cyp26a1, nr1h4, nr1h5, nr0b2b, cyp4f3, nr1h3, cyp8b1, vdrb, cyp27b1, abcb4, abcb11b, abca1a, ppardb, abcd3a, cyp4t8, cyp3c4
+BIOCARTA_RANMS_PATHWAY: ran, rangap1a, tpx2, aurka, wu:fb44b02, rcc1, kpnb1, kpna2, kif15
+BIOCARTA_TEL_PATHWAY: zgc:56064, bcl2a, myca, xrcc6, tnksb, xrcc5, rb1, tp53, terf1, egfra, tert, kras, hsp90aa1.2, akt1, prkcaa, igf1ra
+BIOCARTA_SARS_PATHWAY: anpepb, gpt2l, eif4ea, fbl, ckmb, mapk14b
+BIOCARTA_PDZS_PATHWAY: acta1a, pcloa, nfasca, epb41a, add1, dlg1l, dlg2, nrxn3a, sptan1, guk1b, dlg4a, caska, sptbn1, ncam1a, grin1a, ank1b, dlg3
+BIOCARTA_RACC_PATHWAY: gucy1a1, gucy1b1, gnas, trpc3, kcnq2b, adcy1b, trpc4a, kcnq3, kcnq5a, kcnq4, trpv4, trpc5b
+BIOCARTA_EICOSANOID_PATHWAY: ptger2b, alox5a, ephx1, ptges, ptger1a, ptgs2a, ptger4a, ptgs1, ephx2, ptgis, si:ch1073-140o9.2, tbxa2r, ptger3, ptgir, pla2g4aa, alox5ap, tbxas1, ptgfr, cysltr1
+BIOCARTA_CHREBP_PATHWAY: prkaa1, zgc:56064, gnas, prkacba, adcy1b, prkar1ab, acss2l, si:ch211-272n13.7, prkaa2, prkacba, prkar1b, prkag1, prkag3a, prkar2aa, mlxipl, prkag2b, acsbg1, prkab1a
+BIOCARTA_LIS1_PATHWAY: dynll1, pafah1b1a, dnah6, lrp8, dnah2, ndel1a, abl1, cdk5r1b, dctn3, dctn1b, dnah5l, clip1a, dnah3, cdk5, dnah1
+BIOCARTA_HSWI_SNF_PATHWAY: smarcd1, nf1b, nr3c1, smarcc2, smarca4a, arid1ab, smarcc1a, smarcb1a, tbp, gtf2a1, smarce1
+BIOCARTA_PCAF_PATHWAY: irf3, irf7, irf4a, hmgb1b, irf1b, crebbpa, rela, irf5, kat2b, atf2, nfkb1, irf2, jun
+BIOCARTA_LYMPHOCYTE_PATHWAY: selp, itgb2, si:dkey-237i9.8, itga4, cd44a, itgb1a
+BIOCARTA_AMAN_PATHWAY: man2c1, fut9a, man1a1, man2a2, si:ch73-373m9.1, st8sia4, man2b1, man1a2, b3galt2, st3gal4, fut9d, fut9d, b3galt1a
+BIOCARTA_NEUTROPHIL_PATHWAY: selp, itgb2, si:dkey-237i9.8, cd44a
+BIOCARTA_EFP_PATHWAY: cdk2, ccnb1, cdk4, cdk6, cdk7, smurf1, ccnb2, esr1, cdk8, tp53, smurf2, cdk5, cdk1
+BIOCARTA_CREM_PATHWAY: fshr, adcy1b, crema, xpo1b, fhl5
+BIOCARTA_ERAD_PATHWAY: man2c1, man1a1, man2a2, zgc:175088, cul1a, skp1, si:ch73-373m9.1, edem1, ube2ia, man2b1, man1a2, rbx1, sae1, mogs, sec61a1l, canx, ganab, uba2, uggt1
+BIOCARTA_BTG2_PATHWAY: ngfa, prmt1, chaf1b, chaf1a, btg1, rb1, tp53, hoxb9a, btg2, ccnd1
+BIOCARTA_TERT_PATHWAY: hdac1, myca, max, tp53, sp3b, wt1a, sp1
+BIOCARTA_GHRELIN_PATHWAY: igfals, sst1.1, ghrh, igf1, rapgef5b, igfbp6a, igfbp2b, igfbp3, igfbp5b, igfbp1b, gh1
+BIOCARTA_VOBESITY_PATHWAY: adipoqb, nr3c1, tnfb, rxrab
+BIOCARTA_ERBB3_PATHWAY: erbb3a, ube2d1a, egf, nrg1, egfra
+BIOCARTA_CTBP1_PATHWAY: sumo1, zeb1b, zgc:136929, ube2ia, si:dkey-30c15.12, sae1, uba2, nos1
+BIOCARTA_PRION_PATHWAY: aplp1, bcl2a, nfe2l2a, lama1, rpsa, gfap, dnajb6b, lamc2, lamb1a, hspa5
+BIOCARTA_PLK3_PATHWAY: chek1, ywhah, atr, chek2, atm, tp53, plk3
+BIOCARTA_FXR_PATHWAY: si:dkey-258f14.3, nr1h4, nr0b2b, nr1h3, fabp6, rxrab, abca1a
+BIOCARTA_MHC_PATHWAY: psmb6, psmb8a, mhc1lia, tap1, psmb5, cd74a, zmp:0000001138, psmb9a
+BIOCARTA_ACETAMINOPHEN_PATHWAY: cyp1a, ptgs2a, ptgs1, nr1h5
+BIOCARTA_PRC2_PATHWAY: rbbp4, hdac1, ezh1, bmi1b, bmi1b, yy1a, ezh2, suz12b, rbb4l, eed, cbx4
+BIOCARTA_SM_PATHWAY: snrpc, snrpb, snrpf, snrpe, snrpd3l, u2af1, snrpd1, snrpg, snrpa, snrnp70, snrpd2, snrpa1, srsf2a
+BIOCARTA_RANBP2_PATHWAY: hdac6, ran, hdac4, sumo1, hdac1, pias1b, rangap1a, hdac9b, si:ch1073-55a19.2, mdm2, pias2
+BIOCARTA_IRES_PATHWAY: eif4g2b, eif4ea, eif4g3b, eif4a2, eif3s10
+BIOCARTA_PLC_PATHWAY: pik3cg, pik3r1, plcg1, si:ch1073-140o9.2, prkcba, akt1, prkcaa, pik3ca
+BIOCARTA_BBCELL_PATHWAY: faslg, si:dkey-1h24.6, cd4-1
+BIOCARTA_CDC25_PATHWAY: chek1, ywhah, wee1, myt1a, atm, cdc25b, cdk1
+BIOCARTA_DSP_PATHWAY: mapk3, dusp2, dusp8a, mapk8b, dusp1, dusp6, dusp4, mapk14b
+BIOCARTA_NPC_PATHWAY: ran, rangap1a, si:ch1073-55a19.2, nutf2, rcc1, nup210, kpnb1, nup62l, kpna2, nup153
+BIOCARTA_FLUMAZENIL_PATHWAY: gabra5, gpx9, gabra6a, gabra2a, gabra3, gabra1, gabra4, sod1, prkceb
+BIOCARTA_MELANOCYTE_PATHWAY: kitlga, rps6ka1, bcl2a, mitfa, kitb, creb1b, ep300a
+BIOCARTA_S1P_PATHWAY: mbtps1, si:dkey-258f14.3, hmgcs1, srebf2, mbtps2, lima1a, scap, srebf1
+BIOCARTA_HBX_PATHWAY: hrasb, shc1, lamtor5, grb2a, ptk2ba, creb1b, sos1
+BIOCARTA_MALATEX_PATHWAY: me1, pcxa, si:dkey-178e17.1, slc25a11, aclyb, mdh1ab, pdha1b, cs
+BIOCARTA_TSP1_PATHWAY: cd36, casp3a, thbs1b, fyna, mapk14b, jun, fosab
+BIOCARTA_NPP1_PATHWAY: col4a1, alpl, col4a2, enpp1, col4a4
+BIOCARTA_CPSF_PATHWAY: cstf3, cstf2, cstf1, papola, cpsf4, cpsf1, cpsf3, cpsf2, pabpn1, pabpn1
+BIOCARTA_HES_PATHWAY: fzd1, hey2, wnt1, her6, dla, her1, gsk3bb, rbpjb, si:ch73-281k2.5, notch1b, hnf1a, dvl1b
+BIOCARTA_ERBB4_PATHWAY: psen1, nrg3b, erbb4b, adam17a, nrg2a, prkcba, prkcaa
+BIOCARTA_RHODOPSIN_PATHWAY: saga, rcvrn3, guca1e, grk1a, rhol, pde6a, pde6gb
+BIOCARTA_RNAPOL3_PATHWAY: brf1b, gtf3c3, gtf3c5, tbp, ssb, gtf3c4
+BIOCARTA_TERC_PATHWAY: nfyal, nfyba, rb1, sp3b, sp1, nfyc
+BIOCARTA_EOSINOPHILS_PATHWAY: ccl35.1
+BIOCARTA_REELIN_PATHWAY: lrp8, vldlr, fyna, dab1a, cdk5r1b, cdk5
+BIOCARTA_BARD1_PATHWAY: fancd2, fanca, fance, fancc, fancg, bard1, fancf
+BIOCARTA_LDL_PATHWAY: csf1b, si:dkey-258f14.3, acat1, ccl35.1
+BIOCARTA_SAM68_PATHWAY: mapk3, hrasb, mapk1, khdrbs1a, rasa1a, cdk1
+BIOCARTA_FBW7_PATHWAY: cdk2, tfdp1a, cul1a, skp1, ccne1, rb1, fbxw7, e2f1
+BIOCARTA_CB1R_PATHWAY: cnr2, cnr1, pld2, pld3, si:ch211-168k14.2
+BIOCARTA_SUMO_PATHWAY: sumo1, ube2ia, sumo2b, sumo3a, sae1, uba2
+BIOCARTA_IFNA_PATHWAY: irf9, ifnphi2, tyk2, ifnphi2, jak1, il10rb, stat2, crfb15, stat1b
+BIOCARTA_PKC_PATHWAY: gnaq, si:ch1073-140o9.2, prkcba, rela, prkcaa, nfkb1
+BIOCARTA_PPARG_PATHWAY: crebbpa, ep300a, ppargc1a, rxrab, ncoa1, med1
+BIOCARTA_ION_PATHWAY: p2ry2.1, plcg1, prkcba, ptk2ba, prkcaa
+BIOCARTA_PELP1_PATHWAY: mapk3, esr1, mapk1, crebbpa, ep300a
+BIOCARTA_STAT3_PATHWAY: mapk3, tyk2, jak1, mtor, mapk1, stat3, jak2b
+BIOCARTA_EEA1_PATHWAY: egf, rab5ab, egfra, hgs, zgc:172271, tfr1a, eea1
+BIOCARTA_MITR_PATHWAY: myod1, hdac9b, camk1gb, ywhah, camk1b
+BIOCARTA_CIRCADIAN_PATHWAY: arntl1a, cry1a, clockb, per1a, cry2
+BIOCARTA_RECK_PATHWAY: mmp14a, hrasb, mmp9, reck, mmp2, timp4.3, timp2a
+BIOCARTA_MSP_PATHWAY: il1fma, csf1b, tnfb, ccl35.1, mst1, mst1rb
+BIOCARTA_SLRP_PATHWAY: bgnb, kera, lum, epyc, fmoda, dcn
+BIOCARTA_ALTERNATIVE_PATHWAY: si:ch73-237c6.1, bfb, c7b, cfd, c6, c5, c3a.5, c9
+BIOCARTA_FOSB_PATHWAY: jund, gria2a, ppp1r1b, fosb, cdk5
+BIOCARTA_NOTCH_PATHWAY: psen1, dla, adam17a, rbpjb, notch1b, furinb
+BIOCARTA_TUBBY_PATHWAY: htr2cl1, gnaq, si:ch1073-140o9.2, tub, chrm1a
+BIOCARTA_MRP_PATHWAY: abcc1, abcb4, abcb11b
+BIOCARTA_DICER_PATHWAY: ago1, dicer1, ago3b, ago4, ago2
+BIOCARTA_PLCD_PATHWAY: plcd1a, adra1bb, prkcba, tgm2b, prkcaa
+BIOCARTA_RAN_PATHWAY: ran, rangap1a, si:ch1073-55a19.2, rcc1
+BIOCARTA_WNT_LRP6_PATHWAY: fzd1, wnt8b, wnt8a
+BIOCARTA_PEPI_PATHWAY: cela1.6, grn2, ela2l, ela2l
+BIOCARTA_IFNG_PATHWAY: ifng1, jak1, crfb15, jak2b, stat1b
+BIOCARTA_BOTULIN_PATHWAY: snap25b, chrna1, chrm1a, stx1a
+BIOCARTA_FEEDER_PATHWAY: mpi, hk1, khk, treh, lct, tpi1a, pygma, pygl
+BIOCARTA_PROTEASOME_PATHWAY: rpn1, psma1, psma5, rpn2, psma4, psma3, si:rp71-45k5.4, psmb3, uba7, psmb2, psmb5, psmb4, psmb7, psmb6, ube2a, ube3a, psma6a, psmb1
+BIOCARTA_KREB_PATHWAY: fh, sdha, ogdhb, sucla2, cs, aco2, idh2, mdh1ab
+BIOCARTA_RELA_PATHWAY: ikbkg, fadd, chuk, tnfb, cd40, si:ch211-112c15.8, traf6, crebbpa, tradd, rela, ep300a, ripk1l, ikbkb, nfkb1
+BIOCARTA_NO1_PATHWAY: acta1a, slc7a1a, vegfaa, cav1, ryr2b, prkacba, prkar1ab, tnni1a, pde3a, si:ch211-272n13.7, chrna1, pde3b, calm2a, kdr, prkacba, prkar1b, hsp90aa1.2, akt1, flt1, prkar2aa, chrm1a, flt4, si:dkey-63b1.1
+BIOCARTA_CSK_PATHWAY: csk, prkacba, adcy1b, zap70, prkar1ab, si:ch211-272n13.7, crebbpa, prkacba, prkar1b, cd4-1, prkar2aa
+BIOCARTA_SRCRPTP_PATHWAY: ccnb1, csk, ptpra, vps16, cdc25b, grb2a, prkcba, prkcaa, cdk1
+BIOCARTA_AMI_PATHWAY: col4a1, f7l, pros1, serpinc1, plg, proca, fgb, angptl2b, f10, si:dkey-163m14.10, plat, col4a2, tfpia, col4a4, fgg
+BIOCARTA_ARAP_PATHWAY: arfgef2, si:dkey-283b15.4, copa, cyth4b, cyth1b, gbf1, cltb, cyth3a, asap2a, asap1b, arfgef1, arfgap3, arfgap1
+BIOCARTA_AGR_PATHWAY: mapk3, acta1a, pak4, pak7, dag1, rapsn, nrg3b, utrn, mapk8b, agrn, nrg2a, rac1a, mapk1, chrna1, git2a, pak1, lama3, nrg1, cdc42, egfra, dmd, pak2b, arhgef6, cttn, sp1, chrm1a, itgb1a, jun, dvl1b
+BIOCARTA_AKAP95_PATHWAY: ncapd2, ccnb1, zgc:56064, prkacba, ddx5, si:ch211-272n13.7, prkacba, prkag1, prkar2aa, cdk1
+BIOCARTA_AKT_PATHWAY: faslg, pik3cg, ikbkg, zgc:56064, ghrb, pik3r1, chuk, ywhah, casp9, foxo1a, pdpk1b, rela, hsp90aa1.2, akt1, pik3ca, foxo4, ikbkb, nfkb1, gh1
+BIOCARTA_ALK_PATHWAY: nkx2.5, bmp4, bmp2a, myl2b, nppa, smad4b, tgfbr2b, fzd1, tgfb2, smad6b, bmp10, apc, smad5, nppb, gata4, wnt1, nog3, bmp5, gsk3bb, bmpr2b, bmp7b, ctnnb2, tgfbr3, tgfbr1a, rpl9, bmpr1ab, axin1, tgfb3, atf2, map3k7, smad1, tgfb1b, mef2cb, hnf1a, dvl1b
+BIOCARTA_AT1R_PATHWAY: mapk3, agt, hrasb, mapk8b, map2k1, raf1a, elk1, gnaq, rac1a, mapk1, shc1, pak1, grb2a, prkcba, map2k2a, calm2a, agtr1b, egfra, ptk2ba, map2k4b, prkcaa, atf2, map3k1, jun, sos1
+BIOCARTA_ACE2_PATHWAY: ren, col4a1, agt, ace2, agtr2, agtr1b, col4a2, col4a4
+BIOCARTA_ASBCELL_PATHWAY: faslg, il10, si:dkey-1h24.6, cd4-1
+BIOCARTA_DNAFRAGMENT_PATHWAY: casp7, dffb, casp3a, top2a, hmgb1b, hmgb2a, top2b, dffa, endog
+BIOCARTA_CHEMICAL_PATHWAY: casp7, casp3a, bcl2a, eif2s1b, parp1, casp9, atm, tp53, prkcba, tln1, akt1, prkcaa, apaf1, baxa, casp6b.1, stat1b
+BIOCARTA_SPPA_PATHWAY: mapk3, hrasb, si:ch211-132p1.2, map2k1, raf1a, ptgs1, syk, si:ch1073-140o9.2, mapk1, prkcba, si:dkey-163m14.10, pla2g4aa, tbxas1, prkcaa, itgb1a
+BIOCARTA_ATM_PATHWAY: chek1, gadd45aa, mapk8b, tp73, mre11a, chek2, atm, cdkn1a, abl1, tp53, mdm2, nbn, rela, rbbp8, nfkb1, rad51, rad50, jun
+BIOCARTA_AGPCR_PATHWAY: grk4, gnas, prkacba, prkar1ab, si:ch211-272n13.7, prkcba, prkacba, arrb1, prkar1b, prkcaa, prkar2aa
+BIOCARTA_BCELLSURVIVAL_PATHWAY: jund, casp7, dpf2l, pik3cg, pik3r1, casp3a, mtor, xiap, cct4, birc5a, akt1, pik3ca, itgb1a, fosab
+BIOCARTA_BCR_PATHWAY: mapk3, hrasb, nfatc4, cd79b, mapk8b, map2k1, raf1a, btk, elk1, plcg1, nfatc2a, syk, rac1a, shc1, nfatc3a, grb2a, prkcba, calm2a, mapk14b, lyn, prkcaa, nfatc1, cd79a, map3k1, jun, sos1, fosab, ppp3ccb
+BIOCARTA_BIOPEPTIDES_PATHWAY: mapk3, agt, hrasb, mapk8b, map2k1, raf1a, plcg1, fyna, agtr2, mapk1, shc1, stat5b, grb2a, prkcba, stat3, map2k2a, calm2a, mapk14b, ptk2ba, prkcaa, cdk5, gna15.4, jak2b, sos1, stat1b
+BIOCARTA_RANKL_PATHWAY: irf9, ifnphi2, mapk8b, cd40, fosl2, fosl1b, tnfsf11, traf6, rela, il10rb, nfkb1, crfb15, fosab
+BIOCARTA_CACAM_PATHWAY: camkk1a, camk1gb, camk1b, calm2a, creb1b, camk4
+BIOCARTA_CDMAC_PATHWAY: mapk3, hrasb, map2k1, raf1a, myca, tnfb, si:ch1073-140o9.2, mapk1, prkcba, rela, prkcaa, nfkb1, jun, fosab
+BIOCARTA_CASPASE_PATHWAY: prf1.2, casp8, casp10, casp7, lmnb1, birc2, dffb, casp8, casp3a, parp1, casp9, xiap, casp2, dffa, lmnb2, apaf1, lmna, casp6b.1, birc2
+BIOCARTA_CBL_PATHWAY: pdgfra, met, sh3glb1a, egf, grb2a, sh3glb2b, prkcba, egfra, cbl, prkcaa, si:zfos-1069f5.1, sh3kbp1
+BIOCARTA_CCR3_PATHWAY: mapk3, pik3c2g, hrasb, ccl35.1, myl2b, gnas, map2k1, raf1a, gnaq, si:ch1073-140o9.2, mapk1, prkcba, prkcaa, limk1b, rock2bl
+BIOCARTA_CD40_PATHWAY: ikbkg, dusp1, chuk, tnfaip3, arf2b, traf6, elp1, rela, ikbkb, nfkb1, map3k1
+BIOCARTA_MCM_PATHWAY: kitlga, orc1, cdk2, orc6, cdt1, mcm3, cdkn1bb, ccne1, cdc6, orc3, orc5, mcm7, mcm6, orc2, mcm4, mcm2, mcm5, orc4
+BIOCARTA_G1_PATHWAY: cdk2, skp2, smad4b, tfdp1a, hdac1, cdk4, cdk6, tgfb2, cdkn1bb, ccne1, atr, atm, cdkn1a, rb1, ccna1, abl1, tp53, cdc25b, gsk3bb, ccnd1, tgfb3, dhfr, tgfb1b, e2f1, smad3b, cdk1
+BIOCARTA_G2_PATHWAY: ccnb1, chek1, ywhaqb, gadd45aa, rps6ka1, ywhah, wee1, atr, myt1a, chek2, atm, cdkn1a, cdkn2d, tp53, cdc25b, mdm2, prkdc, ep300a, cdk1
+BIOCARTA_CELL2CELL_PATHWAY: csk, si:dkey-237i9.8, ctnna1, ctnnb2, bcar1, actn2b, actn1, vcla, actn3b, lrrtm2
+BIOCARTA_CERAMIDE_PATHWAY: mapk3, fadd, mapk8b, map2k1, bcl2a, raf1a, si:ch211-112c15.8, nsmaf, aifm1, mapk1, tradd, smpd1, rela, map2k4b, ripk1l, traf2a, nfkb1, baxa, map3k1
+BIOCARTA_TID_PATHWAY: ifng1, tax1bp3, lin7a, tnfb, cd40, si:ch211-112c15.8, rb1, tp53, dnaja3b, ush1c, rela, crfb15, wt1a, ikbkb, nfkb1, jak2b
+BIOCARTA_CLASSIC_PATHWAY: c7b, wu:fd46c06, c1qc, c6, c5, c3a.5, c4, c1qa, c9, c4
+BIOCARTA_COMP_PATHWAY: bfb, c7b, masp1, cfd, wu:fd46c06, c1qc, c6, c5, hbl4, c3a.5, c4, c1qa, c9, c4
+BIOCARTA_HDAC_PATHWAY: pik3cg, avp, pik3r1, mapk7, igf1, myod1, camk1gb, ywhah, nfatc2a, camk1b, hdac5, map2k6, insrb, calm2a, mapk14b, si:ch73-313l22.2, akt1, nfatc1, pik3ca, igf1ra, ppp3ccb
+BIOCARTA_GCR_PATHWAY: adrb2a, pik3cg, nppa, nr3c1, gnas, pik3r1, calm2a, anxa1a, rela, corin, hsp90aa1.2, akt1, pik3ca, nfkb1
+BIOCARTA_CTCF_PATHWAY: pik3cg, smad4b, tgfbr2b, cd79b, zgc:56064, pik3r1, tgfb2, smad5, myca, cdkn1bb, mtor, ctcf, tp53, tgfbr3, mdm2, tgfbr1a, ptenb, pik3ca, tgfb3, smad1, cd79a, tgfb1b
+BIOCARTA_CTL_PATHWAY: faslg, prf1.2, mhc1lia, itgb2, zmp:0000001138
+BIOCARTA_CXCR4_PATHWAY: mapk3, pik3c2g, hrasb, pik3r1, map2k1, raf1a, plcg1, gnaq, mapk1, prkcba, crk, bcar1, ptk2ba, rela, cxcl12b, prkcaa, pik3ca, cxcr4a, nfkb1
+BIOCARTA_CELLCYCLE_PATHWAY: cdk2, ccnb1, tfdp1a, cdk4, cdk6, cdk7, rbl1, cdkn1bb, ccne1, ccnh, cdkn1a, ccnd2a, rb1, ccna1, cdkn2d, cdc25b, ccnd1, cdkn2c, ccndx, e2f1, cdk1
+BIOCARTA_CFTR_PATHWAY: adrb2a, prkacba, adcy1b, prkar1ab, si:ch211-272n13.7, ezrb, prkacba, cftr, prkar1b, prkar2aa, slc9a3r1a
+BIOCARTA_CYTOKINE_PATHWAY: ifng1, txlna, ifnphi2, ifnphi2, il15, il10, tnfb, il16
+BIOCARTA_INFLAM_PATHWAY: ifng1, csf3b, ifnphi2, ifnphi2, tgfb2, il15, csf1b, il10, tnfb, il11b, pdgfab, tgfb3, cd4-1, tgfb1b
+BIOCARTA_D4GDI_PATHWAY: prf1.2, casp8, casp10, casp3a, parp1, casp9, apaf1, arhgap5, jun
+BIOCARTA_DC_PATHWAY: ifng1, anpepb, si:ch211-188c18.1, ifnphi2, si:dkey-14d8.20, si:ch73-380l3.3, ifnphi2, il10, si:dkey-32n7.4, si:dkey-11f4.14, tlr7
+BIOCARTA_P35ALZHEIMERS_PATHWAY: zgc:56064, appb, gsk3bb, cdk5r1b, si:dkeyp-50d11.2, capns1a, cdk5, capn12
+BIOCARTA_RNA_PATHWAY: dnajc3a, eif2s1b, chuk, arf2b, eif2s2, tp53, rela, nfkb1
+BIOCARTA_SKP2E2F_PATHWAY: cdk2, skp2, tfdp1a, cul1a, skp1, ccne1, rb1, ccna1, e2f1
+BIOCARTA_CALCINEURIN_PATHWAY: nfatc4, plcg1, gnaq, nfatc2a, cdkn1a, nfatc3a, prkcba, calm2a, marcksb, sp3b, prkcaa, nfatc1, sp1, ppp3ccb
+BIOCARTA_EGF_PATHWAY: mapk3, hrasb, pik3r1, mapk8b, map2k1, raf1a, elk1, jak1, plcg1, egf, shc1, stat5b, grb2a, prkcba, stat3, egfra, map2k4b, srfb, prkcaa, pik3ca, map3k1, rasa1a, jun, sos1, fosab, stat1b
+BIOCARTA_ETC_PATHWAY: uqcrc1, slc25a4, atp5fa1, slc25a6, sdhda, sdha, sdhc, si:dkey-31b16.7, gpd2, ndufa1
+BIOCARTA_NDKDYNAMIN_PATHWAY: eps15, picalma, epn1, nme2a, nme2b.1, ap2a1, calm2a, synj1, ap2m1b, dnm1a, ppp3ccb
+BIOCARTA_EPHA4_PATHWAY: acta1a, selp, ephb1, rap1b, epha4a, fyna, lyn, itgb1a
+BIOCARTA_EPO_PATHWAY: mapk3, epoa, hrasb, ptpn6, mapk8b, map2k1, raf1a, elk1, plcg1, shc1, stat5b, grb2a, stat5b, il4r.1, jak2b, jun, sos1, fosab
+BIOCARTA_ECM_PATHWAY: mapk3, pik3cg, hrasb, myl2b, pik3r1, map2k1, raf1a, rock1, fyna, mapk1, shc1, tln1, pfn1, gsna, pik3ca, arhgap5, itgb1a
+BIOCARTA_ERK_PATHWAY: mapk3, ngfa, hrasb, pdgfra, zgc:56064, dpm2, gnas, map2k1, rps6ka1, raf1a, elk1, myca, ngfrb, mapk1, shc1, grb2a, stat3, map2k2a, egfra, ptprr, rps6ka5, mknk2a, msmbl, igf1ra, itgb1a, sos1
+BIOCARTA_ERYTH_PATHWAY: kitlga, csf3b, epoa, tgfb2, igf1, il11b, ccl35.1, tgfb3, tgfb1b
+BIOCARTA_EPONFKB_PATHWAY: epoa, cdkn1a, sod2, rela, grin1a, hif1aa, nfkb1, il4r.1, arnt, jak2b
+BIOCARTA_EIF_PATHWAY: eif1, eif2s1b, eif4g2b, eif4ea, eif2s2, eif5, eif4g3b, eef2k, eef2l2, eif4a2, eif1axb, eif3s10, eif2s3, eif6
+BIOCARTA_EXTRINSIC_PATHWAY: f5, f7l, f3a, pros1, serpinc1, proca, fgb, angptl2b, f10, si:dkey-163m14.10, tfpia, fgg
+BIOCARTA_FAS_PATHWAY: faslg, casp10, casp7, fadd, lmnb1, dffb, mapk8b, casp3a, parp1, daxx, sptan1, cflara, rb1, pak1, ptpn13, dffa, prkdc, map2k4b, pak2b, faf1, lmnb2, lmna, map3k7, map3k1, casp6b.1, jun
+BIOCARTA_FCER1_PATHWAY: mapk3, pik3cg, hrasb, nfatc4, pik3r1, mapk8b, map2k1, raf1a, btk, elk1, plcg1, nfatc2a, syk, si:dkey-238j22.1, mapk1, cd247l, shc1, nfatc3a, grb2a, prkcba, calm2a, lyn, pla2g4aa, map2k4b, pak2b, map2k7, nfatc1, pik3ca, map3k1, jun, sos1, fosab, ppp3ccb
+BIOCARTA_FIBRINOLYSIS_PATHWAY: plaub, plg, fgb, f13a1b, angptl2b, serpine1, si:dkey-163m14.10, plat, cpb2, fgg
+BIOCARTA_FMLP_PATHWAY: mapk3, pik3c2g, hrasb, gna15.4, nfatc4, map2k1, raf1a, elk1, camk1gb, nfatc2a, rac1a, si:ch1073-140o9.2, mapk1, camk1b, pak1, nfatc3a, map2k6, map2k2a, calm2a, mapk14b, rela, nfatc1, ncf2, nfkb1, ncf1, map3k1, ppp3ccb
+BIOCARTA_FREE_PATHWAY: xdh, gpx9, gss, tnfb, gsr, sod1, rela, nfkb1
+BIOCARTA_GATA3_PATHWAY: prkacba, prkar1ab, nfatc2a, si:ch211-272n13.7, mapk14b, prkacba, prkar1b, gata3, nfatc1, prkar2aa
+BIOCARTA_SET_PATHWAY: prf1.2, apex1, dffb, hmgb2a, seta, anp32a, crebbpa, dffa
+BIOCARTA_GH_PATHWAY: mapk3, pik3cg, hrasb, socs1a, ptpn6, ghrb, pik3r1, map2k1, rps6ka1, raf1a, plcg1, mapk1, shc1, stat5b, grb2a, prkcba, insrb, irs1, srfb, prkcaa, pik3ca, stat5b, hnf1a, gh1, jak2b, sos1
+BIOCARTA_AHSP_PATHWAY: alad, urod, hmbsb, fech, zgc:163057, alas1, cpox, uros, alas2, hbae5, zgc:163057
+BIOCARTA_TCAPOPTOSIS_PATHWAY: faslg, si:dkey-1h24.6, cd4-1
+BIOCARTA_HIVNEF_PATHWAY: faslg, psen1, casp7, psen2, fadd, lmnb1, birc2, dffb, mapk8b, casp3a, bcl2a, prkcda, parp1, map3k5, bag4, chuk, tnfb, cd40, si:ch211-112c15.8, wu:fb44b02, casp9, daxx, xiap, casp2, sptan1, cflara, arf2b, rb1, tradd, mdm2, dffa, prkdc, rela, pak2b, ripk1l, gsna, traf2a, traf1, map2k7, lmnb2, apaf1, cradd, lmna, nfkb1, cdk11b, map3k1, casp6b.1, rasa1a, birc2, cdk11b
+BIOCARTA_SALMONELLA_PATHWAY: acta1a, wasf1, rac1a, cdc42, waslb
+BIOCARTA_MPR_PATHWAY: mapk3, acta1a, ccnb1, pgr, hrasb, rps6ka1, prkacba, adcy1b, myt1a, prkar1ab, cap1, mapk1, si:ch211-272n13.7, pin1, prkacba, prkar1b, paqr7b, paqr5a, prkar2aa, cdk1
+BIOCARTA_HCMV_PATHWAY: mapk3, pik3cg, pik3r1, map2k1, rb1, mapk1, map2k6, map2k2a, mapk14b, rela, creb1b, akt1, pik3ca, nfkb1, sp1, map3k1
+BIOCARTA_P53HYPOXIA_PATHWAY: hic1, gadd45aa, mapk8b, taf1, atm, cdkn1a, nqo1, tp53, fhl2a, igfbp3, rpa1, mdm2, dnajb6b, ep300a, hsp90aa1.2, akt1, hif1aa, baxa
+BIOCARTA_HIF_PATHWAY: epoa, ldha, vegfaa, unm_hu7910, p4hb, cops5, edn1, creb1b, ep300a, vhl, hsp90aa1.2, hif1aa, arnt, jun
+BIOCARTA_IGF1_PATHWAY: mapk3, pik3cg, hrasb, pik3r1, mapk8b, map2k1, raf1a, igf1, elk1, shc1, grb2a, irs1, ptpn11a, srfb, pik3ca, igf1ra, rasa1a, jun, sos1, fosab
+BIOCARTA_IL17_PATHWAY: kitlga, csf3b, cd8a, si:dkey-261h17.1, si:dkey-11f4.14, cd4-1
+BIOCARTA_IL2_PATHWAY: ghrb, mapk3, hrasb, mapk8b, map2k1, raf1a, elk1, jak1, syk, shc1, stat5b, grb2a, il2rb, stat5b, jun, sos1, fosab
+BIOCARTA_IL3_PATHWAY: mapk3, hrasb, ptpn6, map2k1, raf1a, shc1, stat5b, grb2a, stat5b, ghrb, jak2b, sos1, fosab
+BIOCARTA_IL4_PATHWAY: ghrb, jak1, shc1, grb2a, irs1, stat6, akt1
+BIOCARTA_IL5_PATHWAY: ccl35.1, il1fma, cd4-1
+BIOCARTA_IL6_PATHWAY: mapk3, hrasb, ghrb, map2k1, raf1a, elk1, jak1, shc1, grb2a, stat3, ptpn11a, cebpb, srfb, jak2b, jun, sos1, fosab
+BIOCARTA_IL10_PATHWAY: il10, jak1, tnfb, stat5b, stat3, blvra, crfb15, blvrb, hmox1a, crfb4, stat1b
+BIOCARTA_IL12_PATHWAY: ifng1, tyk2, stat4, mapk8b, cxcr3.3, map2k6, il23r, mapk14b, ghrb, jak2b, jun
+BIOCARTA_IL2RB_PATHWAY: ghrb, mapk3, faslg, crkl, pik3cg, hrasb, socs1a, ptpn6, pik3r1, bcl2a, raf1a, myca, jak1, ppifa, syk, cflara, mapk1, shc1, stat5b, grb2a, irs1, il2rb, cbl, akt1, socs3b, pik3ca, stat5b, e2f1, sos1, fosab
+BIOCARTA_IL22BP_PATHWAY: tyk2, jak1, stat5b, stat3, socs3b, stat5b, jak2b, stat1b
+BIOCARTA_IL7_PATHWAY: pik3cg, pik3r1, bcl2a, jak1, fyna, stat5b, crebbpa, ptk2ba, ep300a, pik3ca, stat5b
+BIOCARTA_GSK3_PATHWAY: cx40.8, myd88, fzd1, zgc:56064, pik3r1, apc, wnt1, gsk3bb, pdpk1b, ctnnb2, rela, ccnd1, akt1, pik3ca, axin1, nfkb1, dvl1b, lef1
+BIOCARTA_DEATH_PATHWAY: casp10, casp7, fadd, birc2, dffb, casp3a, bcl2a, chuk, casp9, xiap, sptan1, cflara, arf2b, tradd, cd40, tnfsf10, dffa, rela, ripk1l, traf2a, apaf1, lmna, nfkb1, casp6b.1, birc2, gas2b
+BIOCARTA_RACCYCD_PATHWAY: mapk3, cdk2, hrasb, ikbkg, tfdp1a, cdk4, cdk6, pik3r1, raf1a, chuk, cdkn1bb, ccne1, cdkn1a, rb1, rac1a, mapk1, pak1, rela, ccnd1, akt1, pik3ca, ikbkb, nfkb1, e2f1
+BIOCARTA_GLEEVEC_PATHWAY: mapk3, crkl, pik3cg, hrasb, pik3r1, mapk8b, map2k1, raf1a, myca, stat5b, grb2a, map2k4b, bcr, akt1, pik3ca, stat5b, map3k1, jak2b, jun, sos1, fosab, stat1b
+BIOCARTA_INSULIN_PATHWAY: mapk3, pik3cg, hrasb, pik3r1, mapk8b, map2k1, raf1a, elk1, shc1, grb2a, insrb, irs1, ptpn11a, srfb, pik3ca, rasa1a, jun, sos1, fosab
+BIOCARTA_INTEGRIN_PATHWAY: mapk3, acta1a, crkl, hrasb, cav1, csk, rapgef1a, mapk8b, map2k1, raf1a, rock1, fyna, mapk1, shc1, grb2a, map2k2a, tln1, tns1b, bcar1, zyx, actn2b, si:dkeyp-50d11.2, actn1, capns1a, bcr, itgb1a, vcla, actn3b, capn12, jun, sos1
+BIOCARTA_INTRINSIC_PATHWAY: f9a, col4a1, f5, pros1, serpinc1, proca, habp2, fgb, angptl2b, f10, serping1, si:dkey-163m14.10, col4a2, f9b, col4a4, fgg
+BIOCARTA_KERATINOCYTE_PATHWAY: mapk3, faslg, hrasb, zgc:56064, mapk8b, map2k1, bcl2a, prkcda, raf1a, mapk13, map3k5, chuk, tnfb, cd40, si:ch211-112c15.8, prkcha, daxx, ets1, arf2b, egf, mapk1, prkcba, map2k6, mapk14b, egfra, prkcq, rela, map2k4b, ripk1l, traf2a, prkcaa, map2k7, prkceb, ikbkb, nfkb1, sp1, prkcg, map3k1, jun, fosab, cebpa
+BIOCARTA_TCRA_PATHWAY: zap70, fyna, cd4-1
+BIOCARTA_LECTIN_PATHWAY: c7b, masp1, c6, c5, hbl4, c3a.5, c4, c9, c4
+BIOCARTA_PYK2_PATHWAY: mapk3, crkl, hrasb, mapk8b, map2k1, raf1a, plcg1, gnaq, rac1a, mapk1, shc1, pak1, grb2a, prkcba, map2k2a, calm2a, bcar1, mapk14b, ptk2ba, map2k4b, prkcaa, map3k1, jun, sos1
+BIOCARTA_MAPK_PATHWAY: mapk3, map3k3, hrasb, mapk11, rps6ka4, map2k5, mapk10, map4k5, tgfb2, mapk8b, map2k1, map3k2, rps6ka1, mapk7, raf1a, mapk13, elk1, map3k5, si:ch211-1i11.3, chuk, myca, mapkapk3, max, daxx, arf2b, mapk6, rac1a, mapkapk5, map4k4, mapk1, map3k8, mapk12b, mapk4, shc1, pak1, grb2a, rps6ka3b, map3k9, tradd, map2k6, map2k2a, map3k10, mapk9, mapk14b, tgfbr1a, si:cabz01078036.1, rela, rps6ka5, map2k4b, mknk2a, creb1b, pak2b, ripk1l, traf2a, map2k7, si:ch211-45c16.2, tgfb3, atf2, map3k7, ikbkb, nfkb1, sp1, mapkapk2a, tgfb1b, map3k1, rps6ka2, map4k3b, jun, map3k12, fosab, rapgef2, cebpa, stat1b
+BIOCARTA_MCALPAIN_PATHWAY: acta1a, hrasb, myl2b, prkacba, cxcr3.3, prkar1ab, capn2l, egf, si:ch211-272n13.7, tln1, ezrb, prkacba, egfra, si:dkeyp-50d11.2, capns1a, prkar1b, prkar2aa, itgb1a, capn12
+BIOCARTA_PPARA_PATHWAY: mapk3, me1, pik3cg, cited2, apoa1a, pparab, pik3r1, ncor2, nrip1b, prkacba, dusp1, ptgs2a, myca, tnfb, prkar1ab, fabp1b.1, hsd17b4, rb1, mrpl11, nr0b2b, ehhadh, mapk1, si:ch211-272n13.7, stat5b, nr1h3, crebbpa, prkcba, ncor1, acox1, prkacba, rela, ep300a, prkar1b, hsp90aa1.2, ppargc1a, prkcaa, pdgfab, pik3ca, rxrab, stat5b, ncoa1, sp1, prkar2aa, med1, sra1, jun, nos2b
+BIOCARTA_ETS_PATHWAY: sin3b, hrasb, e2f4, ncor2, csf1b, rbl1, ets1, hdac5, sin3aa, si:zfos-1069f5.1, ddx20, e2f1, jun, fosab
+BIOCARTA_MTOR_PATHWAY: tsc2, zgc:56064, pik3r1, eif4g2b, eif4ea, pdk2a, mtor, tsc1b, eif4ebp1, pdpk1b, eif4g3b, ptenb, eif4a2, eif3s10, akt1, pik3ca
+BIOCARTA_IGF1R_PATHWAY: mapk3, hrasb, pik3r1, map2k1, rps6ka1, prkacba, raf1a, adcy1b, ywhah, prkar1ab, mapk1, si:ch211-272n13.7, shc1, grb2a, irs1, prkacba, prkar1b, akt1, pik3ca, prkar2aa, igf1ra, sos1
+BIOCARTA_PITX2_PATHWAY: hdac1, fzd1, apc, trrap, wnt1, gsk3bb, ldb1a, crebbpa, ctnnb2, ep300a, axin1, med1, dvl1b, lef1
+BIOCARTA_NGF_PATHWAY: mapk3, ngfa, pik3cg, hrasb, dpm2, pik3r1, mapk8b, map2k1, raf1a, elk1, plcg1, ngfrb, shc1, grb2a, msmbl, pik3ca, jun, sos1, fosab
+BIOCARTA_VIP_PATHWAY: egr2b, vipb, prkacba, chuk, myca, plcg1, gnaq, prkar1ab, nfatc2a, si:ch211-272n13.7, calm2a, prkacba, rela, prkar1b, nfatc1, egr3, vipr2, nfkb1, prkar2aa, map3k1, ppp3ccb
+BIOCARTA_NFAT_PATHWAY: hbegfb, mapk3, acta1a, agt, pik3cg, hrasb, nkx2.5, nppa, nfatc4, pik3r1, mapk8b, map2k1, prkacba, raf1a, igf1, camk1gb, gata4, prkar1ab, nfatc2a, hand2, mapk1, si:ch211-272n13.7, camk1b, nfatc3a, gsk3bb, crebbpa, calm2a, mapk14b, prkacba, edn1, calr, prkar1b, akt1, csnk1a1, nfatc1, pik3ca, camk4, prkar2aa, mef2cb, ppp3ccb
+BIOCARTA_NTHI_PATHWAY: mapk11, smad4b, tgfbr2b, myd88, nr3c1, il1fma, dusp1, chuk, tnfb, arf2b, crebbpa, map2k6, mapk14b, tgfbr1a, rela, ep300a, map3k7, ikbkb, nfkb1, smad3b
+BIOCARTA_NFKB_PATHWAY: ikbkg, myd88, fadd, chuk, tnfaip3, tnfb, cd40, si:ch211-112c15.8, arf2b, traf6, tradd, rela, tab1, ripk1l, map3k7, ikbkb, nfkb1, map3k1, zmp:0000000936
+BIOCARTA_NOS1_PATHWAY: prkacba, prkar1ab, grin2ab, si:ch211-272n13.7, grin2cb, grin2da, prkcba, dlg4a, calm2a, prkacba, prkar1b, prkcaa, grin1a, prkar2aa, nos1, grin2bb, ppp3ccb
+BIOCARTA_NO2IL12_PATHWAY: ifng1, tyk2, stat4, cxcr3.3, il23r, si:dkey-11f4.14, ghrb, cd4-1, jak2b, nos2b
+BIOCARTA_ARENRF2_PATHWAY: cryz, gstp2, mapk8b, nfe2l2a, mafgb, hmox2a, pora, mapk1, prkcba, keap1b, mapk14b, creb1b, hmox1a, maff, mafk, prkcaa, akr1a1a, jun, fosab
+BIOCARTA_P38MAPK_PATHWAY: hrasb, tgfb2, elk1, map3k5, myca, max, daxx, rac1a, mapkapk5, shc1, grb2a, map3k9, tradd, map2k6, cdc42, mapk14b, tgfbr1a, pla2g4aa, ddit3, rps6ka5, map2k4b, creb1b, ripk1l, hspb1, traf2a, tgfb3, atf2, map3k7, mapkapk2a, tgfb1b, map3k1, hspb2, rapgef2, stat1b
+BIOCARTA_P53_PATHWAY: cdk2, gadd45aa, cdk4, pcna, bcl2a, ccne1, atm, cdkn1a, rb1, tp53, mdm2, ccnd1, apaf1, baxa, e2f1
+BIOCARTA_PDGF_PATHWAY: mapk3, pik3cg, hrasb, pdgfra, pik3r1, mapk8b, map2k1, raf1a, elk1, jak1, plcg1, shc1, stat5b, grb2a, prkcba, stat3, map2k4b, srfb, prkcaa, pdgfab, pik3ca, map3k1, rasa1a, jun, sos1, fosab, stat1b
+BIOCARTA_CCR5_PATHWAY: ccl35.1, mapk8b, plcg1, gnaq, ccl35.1, prkcba, calm2a, mapk14b, ptk2ba, cxcl12b, prkcaa, cxcr4a, jun, fosab
+BIOCARTA_PTDINS_PATHWAY: pfkpa, pfkma, btk, pfkla, plcg1, vav2, rac1a, gsk3bb, pdpk1b, gsk3ab, ap2a1, rab5ab, lyn, prkcz, ap2m1b, akt1, eea1, prkceb, arhgef1a
+BIOCARTA_PLCE_PATHWAY: adrb2a, rap2b, prkacba, ptger1a, adcy1b, prkar1ab, si:ch211-272n13.7, prkacba, prkar1b, prkar2aa, plce1
+BIOCARTA_EDG1_PATHWAY: mapk3, pik3cg, smpd2b, pdgfra, pik3r1, s1pr1, adcy1b, itgb3b, rac1a, si:ch1073-140o9.2, mapk1, sphkap, itgav, prkcba, smpd1, akt1, asah1a, prkcaa, pdgfab, pik3ca
+BIOCARTA_CDK5_PATHWAY: mapk3, ngfa, hrasb, dpm2, map2k1, raf1a, ngfrb, mapk1, map2k2a, cdk5r1b, msmbl, cdk5
+BIOCARTA_MYOSIN_PATHWAY: gnaq, rock1, si:ch1073-140o9.2, prkcba, pkn1a, gna13a, prkcaa, arhgap5, arhgef1b
+BIOCARTA_PLATELETAPP_PATHWAY: col4a1, plaub, plg, serpine1, appb, plat, col4a2, f9b, col4a4
+BIOCARTA_PS1_PATHWAY: psen1, fzd1, apc, wnt1, dla, adam17a, gsk3bb, ctnnb2, rbpjb, notch1b, axin1, hnf1a, dvl1b
+BIOCARTA_AKAPCENTROSOME_PATHWAY: zgc:56064, prkacba, nup85, si:ch211-272n13.7, pkn1a, pcnt, prkacba, prkag1, prkceb, prkar2aa, akap9, cdk1
+BIOCARTA_PTEN_PATHWAY: mapk3, faslg, pik3r1, cdkn1bb, pdk2a, mapk1, shc1, grb2a, pdpk1b, bcar1, egfra, ptenb, akt1, pik3ca, itgb1a, ilk, sos1
+BIOCARTA_RAB_PATHWAY: acta1a, rab7a, rab3ab, rab4a, rab11a, rab2a, rab5ab, rab9a, rab6a, rab8a, rab27a
+BIOCARTA_RAC1_PATHWAY: pik3cg, pdgfra, arfip2b, myl2b, wasf1, trioa, pik3r1, chn1, si:ch211-168k14.2, rac1a, pak1, cdk5r1b, ralbp1, pik3ca, ncf2, limk1b, cdk5, map3k1
+BIOCARTA_RAS_PATHWAY: mapk3, ralaa, pik3cg, hrasb, si:ch211-251j10.3, pik3r1, map2k1, raf1a, elk1, chuk, casp9, si:ch211-168k14.2, rac1a, cdc42, rela, akt1, ralbp1, pik3ca, foxo4, nfkb1
+BIOCARTA_NKCELLS_PATHWAY: mapk3, ptpn6, pik3r1, map2k1, mhc1lia, syk, rac1a, pak1, ptk2ba, si:ch211-193e13.5, zmp:0000001138, pik3ca, si:ch211-193e13.5, si:ch211-193e13.5, itgb1a, si:ch211-193e13.5, si:ch211-193e13.5
+BIOCARTA_RB_PATHWAY: cdk2, chek1, cdk4, ywhah, wee1, myt1a, atm, rb1, tp53, cdc25b, cdk1
+BIOCARTA_BAD_PATHWAY: mapk3, kitlga, pik3cg, pik3r1, rps6ka1, bcl2a, prkacba, igf1, adcy1b, ywhah, prkar1ab, mapk1, si:ch211-272n13.7, kitb, prkacba, prkar1b, akt1, pik3ca, baxa, prkar2aa, ghrb, igf1ra
+BIOCARTA_CK1_PATHWAY: drd1b, grm1b, drd2a, zgc:56064, prkacba, prkar1ab, ppp1r1b, si:ch1073-140o9.2, si:ch211-272n13.7, prkacba, cdk5r1b, prkar1b, csnk1db, prkar2aa, cdk5
+BIOCARTA_EIF2_PATHWAY: eif2s1b, eif2b5, eif2s2, eif5, gsk3bb, eif2ak1, eif2s3, eif2ak3
+BIOCARTA_EIF4_PATHWAY: mapk3, ghrb, pik3r1, eif4g2b, eif4ea, pdk2a, mtor, eif4ebp1, mapk1, pdpk1b, prkcba, eif4g3b, irs1, mapk14b, ptenb, eif4a2, akt1, prkcaa, pik3ca
+BIOCARTA_STEM_PATHWAY: csf3b, epoa, cd8a, csf1b, il11b, cd4-1
+BIOCARTA_P27_PATHWAY: cdk2, skp2, tfdp1a, cul1a, skp1, cdkn1bb, ccne1, cks1b, si:ch1073-205c8.3, rb1, rbx1, nedd8, e2f1
+BIOCARTA_PGC1A_PATHWAY: pparab, esrra, camk1gb, ywhah, camk1b, hdac5, calm2a, ppargc1a, camk4, ppp3ccb
+BIOCARTA_PML_PATHWAY: faslg, hrasb, pax3a, sumo1, tnfb, cd40, si:ch211-112c15.8, daxx, ubtfl, sirt1, rb1, tp53, crebbpa
+BIOCARTA_DREAM_PATHWAY: mapk3, oprk1, prkacba, crema, prkar1ab, si:ch211-272n13.7, kcnip3b, prkacba, creb1b, prkar1b, prkar2aa, jun, fosab
+BIOCARTA_LEPTIN_PATHWAY: prkaa1, acaca, prkaa2, cpt1ab, prkag1, prkag3a, prkag2b, lepr, prkab1a
+BIOCARTA_RHO_PATHWAY: myl2b, baiap2a, ophn1, arhgap1, rock1, tln1, pfn1, arhgef11, gsna, pip5k1bb, arhgap5, arhgef1b, vcla, limk1b, pip5k1ab, arhgap4b
+BIOCARTA_AKAP13_PATHWAY: lpar2a, lpar1, prkacba, si:ch211-272n13.7, prkacba, prkag1, prkar2aa, lpar3
+BIOCARTA_ATRBRCA_PATHWAY: rad17, chek1, brca2, rad1, zgc:162895, mre11a, fancd2, atr, fanca, chek2, fance, atm, tp53, nbn, fancc, fancg, rad51, fancf, rad50, rad9a, si:ch1073-385f13.3
+BIOCARTA_CARDIACEGF_PATHWAY: agt, hrasb, ednrab, myca, plcg1, agtr2, egf, prkcba, egfra, rela, edn1, prkcaa, adam12, nfkb1, jun, fosab
+BIOCARTA_HER2_PATHWAY: mapk3, pik3cg, hrasb, erbb3a, pik3r1, ghrb, map2k1, raf1a, esr1, carm1, erbb4b, mapk1, shc1, grb2a, erbb2, stat3, egfra, grip1, ep300a, pik3ca, sos1
+BIOCARTA_ERK5_PATHWAY: mapk3, pik3cg, hrasb, pik3r1, rps6ka1, mapk7, plcg1, ntrk1, mapk1, shc1, grb2a, creb1b, akt1, pik3ca
+BIOCARTA_MAL_PATHWAY: mapk3, acta1a, hrasb, malb, mapk8b, map2k1, raf1a, rock1, rac1a, mapk1, map2k2a, cdc42, srfb, limk1b, map3k1, hnf1a
+BIOCARTA_MEF2D_PATHWAY: hdac1, mef2d, capn2l, nfatc2a, prkcba, calm2a, capns1a, si:ch73-313l22.2, ep300a, prkcaa, nfatc1, capn12, ppp3ccb
+BIOCARTA_MITOCHONDRIA_PATHWAY: casp7, birc2, dffb, casp3a, bcl2a, diabloa, casp9, xiap, aifm1, dffa, apaf1, baxa, casp6b.1, birc2, endog
+BIOCARTA_ACH_PATHWAY: faslg, pik3cg, rapsn, pik3r1, ywhah, chrng, chrnb1, ptk2ba, tert, akt1, pik3ca
+BIOCARTA_PARKIN_PATHWAY: sumo1, sncaip, ube2f, ube2g2, sept5b, gpr37b, ube2g1a
+BIOCARTA_CDC42RAC_PATHWAY: pdgfra, pik3r1, rac1a, pak1, cdc42, pik3ca, waslb
+BIOCARTA_BARR_MAPK_PATHWAY: mapk3, gnas, map2k1, raf1a, adcy1b, kcna2a, kcna1a, si:ch1073-140o9.2, mapk1, map2k2a, arrb1, dnm1a
+BIOCARTA_TOB1_PATHWAY: ifng1, smad4b, tgfbr2b, tgfb2, si:dkey-1h24.6, tgfbr3, tgfbr1a, tob1b, tgfb3, tgfb1b, smad3b
+BIOCARTA_BARRESTIN_SRC_PATHWAY: mapk3, yrk, hrasb, gnas, map2k1, raf1a, adcy1b, kcna2a, kcna1a, si:ch1073-140o9.2, mapk1, map2k2a, arrb1, dnm1a, hck
+BIOCARTA_NKT_PATHWAY: ifng1, ccl35.1, tgfb2, cxcr3.3, ccr7, si:dkey-1h24.6, il23r, ccl35.1, crfb15, ghrb, tgfb3, cxcr4a, cd4-1, tgfb1b
+BIOCARTA_IL1R_PATHWAY: ifnphi2, il1fma, myd88, ifnphi2, il1fma, tgfb2, mapk8b, chuk, tnfb, irak3, arf2b, traf6, map2k6, mapk14b, rela, tab1, irak1, tgfb3, map3k7, ikbkb, nfkb1, tgfb1b, map3k1, jun, zmp:0000000936
+BIOCARTA_MET_PATHWAY: mapk3, acta1a, crkl, pik3cg, hrasb, gab1, rapgef1a, pik3r1, met, mapk8b, map2k1, raf1a, dock1, elk1, rap1b, hgfa, mapk1, pak1, grb2a, crk, stat3, map2k2a, ptk2ba, ptenb, ptpn11a, pik3ca, itgb1a, rasa1a, jun, sos1, fosab
+BIOCARTA_GPCR_PATHWAY: mapk3, hrasb, nfatc4, map2k1, prkacba, raf1a, elk1, adcy1b, plcg1, gnaq, prkar1ab, nfatc2a, si:ch211-272n13.7, nfatc3a, rps6ka3b, prkcba, calm2a, prkacba, creb1b, prkar1b, prkcaa, nfatc1, prkar2aa, jun, fosab, ppp3ccb
+BIOCARTA_IGF1MTOR_PATHWAY: zgc:56064, pik3r1, eif2s1b, igf1, eif4ea, pdk2a, eif2b5, mtor, eif4ebp1, eif2s2, gsk3bb, pdpk1b, ptenb, inppl1a, akt1, eif2s3, pik3ca, igf1ra
+BIOCARTA_SODD_PATHWAY: fadd, birc2, bag4, tnfb, cd40, si:ch211-112c15.8, tradd, ripk1l, traf2a
+BIOCARTA_SHH_PATHWAY: gli3, gli2a, dyrk1b, prkacba, shha, prkar1ab, dyrk1ab, sufu, si:ch211-272n13.7, smo, gsk3bb, prkacba, ptch1, prkar1b, prkar2aa, gli1
+BIOCARTA_PTC1_PATHWAY: ccnb1, shha, cdk7, ccnh, xpo1b, cdc25b, ptch1, mnat1, cdk1
+BIOCARTA_SPRY_PATHWAY: mapk3, spry2, hrasb, map2k1, raf1a, spry4, egf, mapk1, shc1, ptprb, spry1, grb2a, egfra, cbl, rasa1a, sos1
+BIOCARTA_BARRESTIN_PATHWAY: pparab, gnas, adcy1b, kcna2a, kcna1a, si:ch1073-140o9.2, ap2a1, arrb1, ap2m1b, dnm1a
+BIOCARTA_STATHMIN_PATHWAY: ccnb1, uhmk1, prkacba, mapk13, rb1cc1, stmn1b, prkar1ab, si:ch211-272n13.7, prkacba, prkar1b, si:dkey-11f4.14, tsg101b, camk4, prkar2aa, cdk1, hspa5
+BIOCARTA_HSP27_PATHWAY: acta1a, faslg, casp3a, bcl2a, mapkapk3, tnfb, casp9, daxx, hspb1, apaf1, mapkapk2a, hspb2
+BIOCARTA_TCR_PATHWAY: mapk3, pik3cg, hrasb, nfatc4, pik3r1, mapk8b, map2k1, raf1a, elk1, zap70, plcg1, nfatc2a, fyna, rac1a, shc1, nfatc3a, grb2a, prkcba, calm2a, rela, map2k4b, prkcaa, nfatc1, pik3ca, nfkb1, map3k1, rasa1a, jun, sos1, fosab, ppp3ccb
+BIOCARTA_TCYTOTOXIC_PATHWAY: cd8a, itgb2, si:dkey-1h24.6, si:dkey-11f4.14, thy1
+BIOCARTA_THELPER_PATHWAY: itgb2, si:dkey-1h24.6, si:dkey-11f4.14, cd4-1, thy1
+BIOCARTA_TALL1_PATHWAY: mapk8b, chuk, arf2b, traf6, mapk14b, rela, traf2a, tnfsf13b, nfkb1
+BIOCARTA_TGFB_PATHWAY: mapk3, smad2, smad4b, tgfbr2b, tgfb2, map2k1, apc, crebbpa, si:dkey-30c15.12, smad7, tgfbr1a, tab1, ep300a, zfyve9b, skilb, tgfb3, map3k7, tgfb1b, smad3b
+BIOCARTA_TH1TH2_PATHWAY: il12a, il12ba, ifng1, nr1i2, si:dkey-1h24.6, il23r, crfb15, ghrb
+BIOCARTA_41BB_PATHWAY: ifng1, map4k5, mapk8b, map3k5, chuk, mapk14b, rela, traf2a, atf2, ikbkb, nfkb1, map3k1, jun
+BIOCARTA_CTLA4_PATHWAY: pik3r1, cd28, si:dkey-1h24.6, grb2a, ptpn11a, pik3ca, itk
+BIOCARTA_LONGEVITY_PATHWAY: sod3a, pik3cg, hrasb, ghrb, pik3r1, igf1, shc1, sod1, sod2, cat, akt1, pik3ca, igf1ra, gh1
+BIOCARTA_PAR1_PATHWAY: pik3cg, pik3r1, si:ch211-132p1.2, adcy1b, gnaq, rock1, si:ch1073-140o9.2, prkcba, si:dkey-163m14.10, ptk2ba, gna13a, prkcaa, pik3ca, map3k7, arhgef1b
+BIOCARTA_STRESS_PATHWAY: ikbkg, zgc:113184, mapk8b, chuk, tnfb, si:ch211-112c15.8, casp2, arf2b, tradd, map2k6, mapk14b, rela, map2k4b, ripk1l, traf2a, cradd, ikbkb, nfkb1, map3k1, jun
+BIOCARTA_TNFR1_PATHWAY: madd, fadd, lmnb1, dffb, mapk8b, casp3a, parp1, bag4, tnfb, si:ch211-112c15.8, casp2, sptan1, rb1, pak1, tradd, dffa, prkdc, map2k4b, pak2b, ripk1l, traf2a, lmnb2, cradd, lmna, map3k7, map3k1, jun
+BIOCARTA_TNFR2_PATHWAY: ikbkg, zgc:113184, dusp1, chuk, tnfaip3, cd40, arf2b, elp1, rela, ripk1l, traf2a, traf1, ikbkb, nfkb1, map3k1
+BIOCARTA_TOLL_PATHWAY: ikbkg, myd88, pparab, pglyrp5, mapk8b, elk1, chuk, arf2b, traf6, map2k6, mapk14b, rela, tab1, map2k4b, map3k7, ikbkb, nfkb1, map3k1, lrrc15, tlr7, jun, fosab
+BIOCARTA_TPO_PATHWAY: mapk3, thpo, pik3cg, hrasb, mpl, pik3r1, map2k1, raf1a, plcg1, shc1, stat5b, grb2a, prkcba, stat3, prkcaa, pik3ca, stat5b, jak2b, rasa1a, jun, sos1, fosab, stat1b
+BIOCARTA_CREB_PATHWAY: mapk3, hrasb, pik3r1, rps6ka1, prkacba, adcy1b, prkar1ab, rac1a, mapk1, si:ch211-272n13.7, grb2a, prkcba, mapk14b, prkacba, rps6ka5, creb1b, prkar1b, akt1, prkcaa, pik3ca, prkar2aa, sos1
+BIOCARTA_CARM1_PATHWAY: prkacba, prkar1ab, carm1, si:ch211-272n13.7, crebbpa, prkacba, creb1b, ep300a, prkar1b, rxrab, prkar2aa
+BIOCARTA_TFF_PATHWAY: mapk3, pik3cg, hrasb, ghrb, pik3r1, casp9, mapk1, shc1, grb2a, erbb2, ctnnb2, egfra, akt1, apaf1, pik3ca, itgb1a, gh1, sos1
+BIOCARTA_TRKA_PATHWAY: ngfa, hrasb, dpm2, pik3r1, plcg1, ntrk1, shc1, grb2a, prkcba, msmbl, akt1, prkcaa, pik3ca, sos1
+BIOCARTA_ARF_PATHWAY: pik3cg, polr1b, pik3r1, myca, rb1, rac1a, abl1, tp53, mdm2, polr1d, tbx2b, polr1a, pik3ca, e2f1, polr1c
+BIOCARTA_UCALPAIN_PATHWAY: acta1a, itgb3b, sptan1, rac1a, tln1, ezrb, actn2b, si:dkeyp-50d11.2, actn1, capns1a, itgb1a, actn3b, capn12
+BIOCARTA_VEGF_PATHWAY: pik3cg, hrasb, vegfaa, pik3r1, eif1, eif2s1b, eif2b4, elavl1a, plcg1, eif2b5, eif2b2, eif2s2, shc1, prkcba, kdr, vhl, eif1axb, prkcaa, eif2b3, eif2s3, pik3ca, flt1, hif1aa, arnt, flt4, eif2b1
+BIOCARTA_VITCB_PATHWAY: col4a1, slc2a3b, p4hb, slc2a1a, col4a2, slc23a2, col4a4, slc23a1
+BIOCARTA_WNT_PATHWAY: smad4b, hdac1, fzd1, zgc:56064, apc, myca, zgc:136929, nlk2, wnt1, wif1, gsk3bb, crebbpa, ctnnb2, tab1, ccnd1, axin1, map3k7, hnf1a, ppardb, dvl1b
+BIOCARTA_ACTINY_PATHWAY: acta1a, wasf1, ntrk1, rac1a, wasf2, abi2a, nck1b, pir, nckap1, wasf3b, waslb

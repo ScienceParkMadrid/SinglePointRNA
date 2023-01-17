@@ -1,0 +1,4 @@
+# Genes de ciclo celular (fases S y G2M), Danio rerio, gene symbols
+S: mcm5, pcna, tyms, fen1, mcm7, mcm4, rrm1, unga, gins2, mcm6, cdca7a, dtl, prim1, uhrf1, si:dkey-185e18.7, hells, rfc2, polr1b, nasp, rad51ap1, gmnn, wdr76, slbp, ccne2, ubr7, msh2, atad2, rad51, rrm2, cdc45, cdc6, exo1, tipin, dscc1, blm, casp8ap2, usp1, pola1, chaf1b, mrpl36, e2f8
+G2M: hmgb2a, cdk1, nusap1, ube2c, birc5a, tpx2, top2a, ndc80, zgc:86839, nuf2, cks1b, mki67, tmpob, si:dkeyp-115e12.6, tacc3, smc4, ccnb2, ckap2l, si:ch211-266i6.3, aurkb, bub1, kif11, anp32e, tubb4b, gtse1, kif20bb, si:ch211-69g19.2, cdc20, ttk, rangap1a, ncapd2, dlgap5, si:ch211-244o22.2, cdca8, ect2, kif23, hmmr, aurka, anln, lbr, ckap5, cenpe, ctcf, nek2, gas2l3, cbx5, selenoh
+

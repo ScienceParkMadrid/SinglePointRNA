@@ -1,0 +1,4 @@
+# Genes de ciclo celular (fases S y G2M), Mus musculus, gene symbols
+S: Rrm2, Mcm4, Gmnn, Chaf1b, Mrpl36, Exo1, Uhrf1, Cdc45, Msh2, Fen1, Slbp, Hells, Ubr7, Rad51ap1, Cenpu, Cdc6, Dscc1, Cdca7, Nasp, Blm, Tipin, Mcm6, Ung, Usp1, Wdr76, Clspn, Tyms, Dtl, Gins2, Prim1, Mcm5, Pola1, Rrm1, Ccne2, Rad51, Polr1b, Casp8ap2, Pcna, Mcm7, Rfc2, E2f8 
+G2M: Cbx5, Dlgap5, Gtse1, Cdc25c, Smc4, Kif20b, Cdca2, Ctcf, Cdca3, Ckap2, Anp32e, Gas2l3, G2e3, Hmgb2, Cks2, Tacc3, Ncapd2, Cdk1, Ttk, Top2a, Psrc1, Kif23, Cenpe, Anln, Ect2, Cdc20, Nek2, Rangap1, Birc5, Hmmr, Kif2c, Cks1b, Cenpf, Aurkb, Cenpa, Hjurp, Tpx2, Ccnb2, Cdca8, Ndc80, Lbr, Kif11, Mki67, Ube2c, Pimreg, Nuf2, Ckap2l, Jpt1, Tubb4b, Bub1, Nusap1, Ckap5, Aurka
+

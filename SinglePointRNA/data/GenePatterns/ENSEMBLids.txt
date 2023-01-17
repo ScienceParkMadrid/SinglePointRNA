@@ -1,0 +1,6 @@
+# Patrones para reconocer ENSEMBL gene IDs de cada especie
+Hsapiens: "^ENSG"
+Mmusculus: "^ENSMUSG"
+Rnorvegicus: "^ENSRNOG"
+Drerio: "^ENSDARG"
+

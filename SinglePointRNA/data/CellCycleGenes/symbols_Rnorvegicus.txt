@@ -1,0 +1,4 @@
+# Genes de ciclo celular (fases S y G2M), Rattus norvegicus, gene symbols
+S: Mcm5, Pcna, Tyms, Fen1, Mcm7, AC129365.1, Rrm1, Ung, Gins2, Mcm6, Cdca7, Dtl, Prim1, Uhrf1, Cenpu, LOC100911660, Rfc2, Polr1b, Nasp, Rad51ap1, Gmnn, Wdr76, Slbp, Ccne2, Ubr7, Msh2, Rad51, Rrm2, Cdc45, Cdc6, Exo1, LOC120094818, Dscc1, Blm, Casp8ap2, Usp1, Clspn, Pola1, Chaf1b, LOC100910528, E2f8
+G2M: RGD1559962, Cdk1, Nusap1, Ube2c, Birc5, Tpx2, Top2a, AC112018.1, Nuf2, AABR07049223.1, Mki67, Cenpf, Tacc3, Pimreg, Smc4, LOC100364016, Ckap2l, Ckap2, Aurkb, Bub1, Kif11, Anp32e, Tubb4b, Gtse1, Kif20b, Hjurp, Cdca3, AC120066.1, Cdc20, Ttk, Cdc25c, Kif2c, Rangap1, Ncapd2, Dlgap5, Cdca2, Cdca8, Ect2, Kif23, Hmmr, Aurka, Psrc1, Anln, AABR07021955.1, Ckap5, Cenpe, Ctcf, Nek2, G2e3, Gas2l3, Cbx5, Cenpa  
+
