@@ -37,15 +37,17 @@ ui <- dashboardPage(
       ),
       title = tags$img(src='nameLogo.png', width=280 ),
       titleWidth = 300,
-      tags$li(
-        class = "dropdown", br(),
-        a("Notas de desarrollo",
-          href="DevelNotes.html", target="_blank",
-          style = "cursor: pointer;"
-        )
-      )
+      tags$li( class = "dropdown", 
+        br(),
+        p( align="left", "Contact with us through GitHub:",
+        a( href="https://github.com/ScienceParkMadrid/SinglePointRNA",  
+          img(src='GHicon.png', width="50px" ) ),
+        HTML("&#160;&#160;&#160;")
+      ) ),
+      tags$li( class = "dropdown")
     ),
   
+
   dashboardSidebar(
     width = 300,
     br(), br(),
@@ -63,8 +65,8 @@ ui <- dashboardPage(
       menuItem("Cell Type Imputation", tabName = "cellType", icon = icon("bullseye")),
       menuItem("Altered Pathways", tabName = "paths", icon=icon("bezier-curve") )
     ),
-    br(),img(src="logos.png", width=280),
-    HTML( '<p style="font-size:10;text-align:center">Copyright © placeholder</p>' )
+    br(),img(src="logos.png", width=280), br()
+    
   ),
   
   dashboardBody(
