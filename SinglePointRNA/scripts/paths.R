@@ -164,7 +164,7 @@ paths_getBG <- function( inputData, DEparams, DEtabs, laxBG=TRUE ){
         if( deMode=="1 VS rest" ){
           
           fg <- colnames(inputData)[ inputData$groups == groupList[ i ] ]
-          bg <- colnames(inputData)[ !colnames(inputData) %in% cfg ]
+          bg <- colnames(inputData)[ !colnames(inputData) %in% fg ]
           
           g <- rownames(inputData)[ ! rownames(inputData) %in% genesNoTest ]
           minCell = min.ptc * length( fg )
