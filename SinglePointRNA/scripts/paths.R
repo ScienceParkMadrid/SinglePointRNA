@@ -122,14 +122,19 @@ paths_getBG <- function( inputData, DEparams, DEtabs, laxBG=TRUE ){
     groupList <- lapply( names( DEtabs ), function(i){ unlist( strsplit( i, " VS ") ) } )
   }
   
+  if( is.factor( inputData$groups ) ){
+     levels( inputData$groups ) <- c( levels(inputData$groups), "Other" )
+  }
+  
   if( DEparams[ "Minimum Log2FC", ] > 0 & laxBG ){
     
     expressedGenes <- lapply(
       seq_along(groupList),
       function( i, inputData, genesNoTest, deMode ){
         
+    
         if( deMode=="1 VS rest" ){
-          i <- groupList[ i ]
+          i <- levels( groupList )[ i ]
           inputData$groups[ inputData$groups !=i ] <- "Other"
           g <- rownames(inputData)[ ! rownames(inputData) %in% genesNoTest ]
           g <- AverageExpression(
