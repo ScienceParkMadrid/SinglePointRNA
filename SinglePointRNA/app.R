@@ -271,6 +271,7 @@ ui <- dashboardPage(
               style="color: #fff; background-color: #3c8dbc; border-color: #015e95") )
           ),
           #outputs
+          uiOutput("Filter_doneText"),
           uiOutput("Filter_numVarsCheck"),
           uiOutput("Filter_catVarsCheck")
         ),
@@ -974,6 +975,7 @@ server <- function(input, output, session) {
     ### f1: inicial values ----
   
   output$Filter_currentData <-  renderUI({ HTML("No dataset loaded.") })
+  output$Filter_doneText <- NULL
   
   output$Filter_rangeCount <- renderText("1: Counts per cell - Range: No dataset loaded.")
   output$Filter_rangeFeat <- renderText("2: Features per cell - Range: No dataset loaded.")
@@ -1051,10 +1053,11 @@ server <- function(input, output, session) {
   } )
     ### f3: run filter ----
   
-  # prepare input
+  # prepare filter parameter list
   observeEvent(  c(input$Filter_run , input$Filter_check ),{
     
     gen_noDataNotif( inputDataset$Seurat )
+    #output$Filter_doneText <- NULL
     
     if(!is.null( inputDataset$Seurat ) ){
       fl <- list(
@@ -1093,10 +1096,12 @@ server <- function(input, output, session) {
     
   }, ignoreInit = TRUE )
   
+  # Run filters
   observeEvent( input$Filter_check,{
     if( !is.null( inputDataset$Seurat )){
       Filter_check$Filters <- Filter_filterCells( 
         inputData=inputDataset$Seurat, filterList = Filter_fList$Filters, check=TRUE)
+      output$Filter_doneText <- renderUI({ HTML("<h3>Check completed.</h3>") }) 
     }
   } )
   
@@ -1114,9 +1119,11 @@ server <- function(input, output, session) {
         inputData=inputDataset$Seurat, filterList = Filter_fList$Filters, 
         regressVars = input$Filter_regressVariable,
         mode=input$Filter_normMode )
+      output$Filter_doneText <- renderUI({ HTML("<h3>Filter/normalization completed.</h3>") }) 
     }
   })
-  # filter output
+  
+  # filter outputs
   observeEvent( Filter_check$Filters,{
     output$Filter_numVarsCheck <- renderUI({ renderTable({
       Filter_check$Filters[["Summary"]][["Numeric"]]
