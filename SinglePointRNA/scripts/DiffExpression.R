@@ -116,24 +116,26 @@ DiffExpr_rmFeats <- function( feats, rmMitoG, rmRiboG, rmOtherG=NULL ){
   # list of features (gnene IDs) facter removing ribosomal/mitocondrial/other
   # gene IDs.
   
-  load("data/GeneIDpatterns.RData")
-  
   spec <- DiffExpr_genomeSpecies( feats )
   
-  if( grepl( "ENSEMBL", spec[2] ) ){ # ENSEMBL IDs
-    rmFeats <- genelists[[ spec[1] ]]
+  spec[1] <- gsub("\\. ", "", spec[1] )
+  avblOrgs <- unique( gsub( "\\.txt", "", gsub( "^[A-Za-z]*_", "", dir("data/QC.Genes/") ) ) )
+  
+  
+  if( spec[1] %in% avblOrgs ){  # skip if species is "Other" or uniavailable in the data folder
+    if( spec[ 2 ] != "ENSEMBL Gene" ){  # gene symbols
+      GeneList <- gen_loadGeneLists( IDformat = "symbols", section = "Rb.Mt.NRY"  )
+    } else { # ENSEMBL gene IDs
+      GeneList <- gen_loadGeneLists( IDformat = "ENSids", section = "Rb.Mt.NRY"  )
+    }
     
-    if( rmMitoG ){ feats <- feats[ ! feats %in% rmFeats[[ "mitoG" ]] ] }
-    if( rmRiboG ){ feats <- feats[ ! feats %in% rmFeats[[ "riboG" ]] ] }
-    if( !is.null(rmOtherG) ){ feats <- feats[ ! feats %in% rmOtherG ] }
+    GeneList <- GeneList[[ spec[ 1 ] ]]
     
-  } else { # gene symbols
-    rmPatts <- genePatterns[[ spec[1] ]]
+    if( rmMitoG ){ feats <- feats[ ! feats %in% GeneList[[ "mitoG" ]] ] }
+    if( rmRiboG ){ feats <- feats[ ! feats %in% GeneList[[ "riboG" ]] ] }
     
-    if( rmMitoG ){ feats <- feats[ ! grepl( rmPatts[1], feats ) ] }
-    if( rmRiboG ){ feats <- feats[ ! grepl( rmPatts[2], feats ) ] }
-    if( !is.null(rmOtherG) ){ feats <- feats[ ! feats %in% rmOtherG ] }
   }
+  if( !is.null(rmOtherG) ){ feats <- feats[ ! feats %in% rmOtherG ] }
   
 
   return(feats)
