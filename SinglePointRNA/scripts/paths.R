@@ -15,7 +15,7 @@ run_paths <- function( inputData, DEtabs, pathDB, DEparams, minDE=5 ){
   minLFC <- as.numeric( DEparams[ "Minimum Log2FC", ] )
   
   
-  if( is.list( bg_genes )){ # conditional or 1 VS 1 DE analysis
+  if( DEparams[ "Mode of comparison", ] %in% c("1 VS 1", "Conditional") ){ 
     pathEnrich <- bplapply( 
       seq_along(DEtabs),
       function(i){
