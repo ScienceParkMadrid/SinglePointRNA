@@ -122,9 +122,10 @@ cType_checkGenes <- function( inputData, manual_markers=NULL, auto_markers=NULL,
     
     g <- inputData@assays$RNA@counts@Dimnames[[1]]
     
-    if( sum( g %in% cellmatch$gene ) < 100 ){
-      showNotification("Less than 10 marker genes are expressed in this dataset",
-                       duration = 20, type="warning", id="cType_gNoti" )    
+    if( sum( g %in% cellmatch$gene ) < 10 ){
+      showNotification("Less than 10 marker genes from this reference are expressed in the dataset",
+                       duration = 1000, type="error", id="cType_gNoti" )   
+      return("scCATCH_lowMarker")
     } else { 
       removeNotification( id="cType_gNoti")
     } 
