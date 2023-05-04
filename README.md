@@ -38,6 +38,12 @@ SinglePoint RNA depends on the following R packages:
 * [BiocParallel](https://bioconductor.org/packages/release/bioc/html/BiocParallel.html)
 * [glmGamPoi](https://bioconductor.org/packages/release/bioc/html/glmGamPoi.html)
 
+You can install the dependencies running the `install_deps.r` script:
+
+```console
+$ Rscript install_deps.r
+```
+
 Memory and processing requirements will vary depending on the size of the datasets to analyzed. As a reference, for a 5,000 cell dataset, a minimum of 8GB and 4 cores is recommended.
 
 ### Running SinglePoint RNA
