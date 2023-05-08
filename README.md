@@ -57,4 +57,6 @@ After installing R, RStudio, and the R libraries stated above:
 
 It's also possible to run SinglePoint RNA in a remote server using [Shiny Server](https://posit.co/products/open-source/shinyserver/)
 
+## Citation
 
+[SinglePointRNA, an user-friendly application implementing single cell RNA-seq analysis software](https://arxiv.org/abs/2305.00008)
