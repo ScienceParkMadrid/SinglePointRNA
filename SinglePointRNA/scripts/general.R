@@ -40,7 +40,7 @@ gen_save <- function( inputData=NULL, tabs = NULL, type="meta", f_name=NULL ){
         function(i){
           if( !is.null( tabs[[i]] ) ){ # if an element is null, skip it
             
-            if( suppressWarnings( sum( is.na( as.integer( rownames( tabs ) ) ) ) ) ==0 ) {
+            if( suppressWarnings( sum( is.na( as.integer( rownames( tabs[[i]] ) ) ) ) ) ==0 ) {
               #keep rownames only if they are informative
               rNames=FALSE } else { rNames=TRUE }
             
