@@ -346,7 +346,8 @@ DiffExpr_plotHM <- function( inputData, markers, groups=NULL, Var1=NULL, Var2=NU
       markers,
       function(i){
         i <- i[ i$avg_log2FC > minLFC, ]
-        rownames( i )[ 1:n ] } ))
+        if(nrow(i) >= n ){ rownames( i )[ 1:n ]
+        } else { rownames(i)  }  } ))
   } else {
     top <- c(
       rownames(markers[[1]])[ markers[[1]]$avg_log2FC>minLFC ][1:n],
