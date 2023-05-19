@@ -27,13 +27,28 @@ run_Merge <- function( inputTable=NULL, inputData=NULL, projectName="scRNA-seq",
   
   if( phase==2 ){ # joining the datasets
     
-    
-    
     if( mode=="merge"){ # no correction!
       cellIds <- sapply( inputData, function(i){ i@project.name } )
       inputData <- merge( 
         x = inputData[[ 1 ]], y = inputData[ 2:length(inputData) ],
         project = projectName, add.cell.ids = cellIds )
+      
+      if( norMode == "SCT" ){
+        inputData <- SCTransform(
+          inputData, method = "glmGamPoi",
+          vars.to.regress = NULL, 
+          verbose = FALSE, return.only.var.genes = T )
+        
+        inputData <- RunPCA( inputData, features=rownames(inputData)  )
+      } else if( norMode == "logNorm"){
+        inputData <- NormalizeData( 
+          inputData, normalization.method = "LogNormalize", scale.factor = 1e5  )
+        inputData <- ScaleData( 
+          inputData,
+          vars.to.regress = NULL,
+          features = rownames( inputData ) )
+        inputData <- RunPCA( inputData, features=rownames(inputData)  )
+      }
       
       return( inputData )
       
@@ -41,7 +56,7 @@ run_Merge <- function( inputTable=NULL, inputData=NULL, projectName="scRNA-seq",
       
      regVars <- Merge_checkRegressVars( inputData ) 
      
-     if( !is.na(regVars) & norMode=="logNorm" ){
+     if( (!is.na(regVars)|is.null(regVars)) & norMode=="logNorm" ){
         
         inputData <- lapply(inputData, function(i) { # Find variable features
           i <- NormalizeData( i, normalization.method = "LogNormalize",  verbose = FALSE )
@@ -66,7 +81,7 @@ run_Merge <- function( inputTable=NULL, inputData=NULL, projectName="scRNA-seq",
         inputData@project.name <- projectName
         return( inputData )
         
-      } else if( !is.na(regVars) & norMode=="SCT" ){
+      } else if( (!is.na(regVars)|is.null(regVars)) & norMode=="SCT" ){
         inputData <- lapply( 
           inputData,
           function(i, regVars){ Merge_SCTnorm( i, regVars ) }, regVars = regVars )
@@ -418,7 +433,7 @@ Merge_checkRegressVars <- function( inputData ){
   } else {
     
     if( length( inputData@commands )>0 ){
-      if( ( grepl("SCTransform", names(inputData@commands) ) |
+      if( any( grepl("SCTransform", names(inputData@commands) ) |
             grepl("ScaleData", names(inputData@commands) ) )
       ){ # use whichever operation was done last
         com <- which( grepl("SCTransform", names(inputData@commands) ) |
