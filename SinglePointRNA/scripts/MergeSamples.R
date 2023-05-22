@@ -56,7 +56,7 @@ run_Merge <- function( inputTable=NULL, inputData=NULL, projectName="scRNA-seq",
       
      regVars <- Merge_checkRegressVars( inputData ) 
      
-     if( (!is.na(regVars)|is.null(regVars)) & norMode=="logNorm" ){
+     if( any(!is.na(regVars)|is.null(regVars)) & norMode=="logNorm" ){
         
         inputData <- lapply(inputData, function(i) { # Find variable features
           i <- NormalizeData( i, normalization.method = "LogNormalize",  verbose = FALSE )
@@ -81,7 +81,7 @@ run_Merge <- function( inputTable=NULL, inputData=NULL, projectName="scRNA-seq",
         inputData@project.name <- projectName
         return( inputData )
         
-      } else if( (!is.na(regVars)|is.null(regVars)) & norMode=="SCT" ){
+      } else if( any(!is.na(regVars)|is.null(regVars)) & norMode=="SCT" ){
         inputData <- lapply( 
           inputData,
           function(i, regVars){ Merge_SCTnorm( i, regVars ) }, regVars = regVars )
