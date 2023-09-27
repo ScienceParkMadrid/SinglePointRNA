@@ -1,7 +1,7 @@
 Hmsg<-list(
   Load_help1=paste0("This app can read single cell RNA-seq data in several formats: <br>",
-                    " - Individual files in plain text ('.txt', '.csv'...), Hierarchical Data Format (.H5) ",
-                    "or R's data format RDS (.RDS). <br>",
+                    " - Individual files in plain text ('.txt', '.csv' with genes as rows and cells as columns), ",
+                    "Hierarchical Data Format (.H5), or R's data format RDS (.RDS). <br>",
                     " - 10X Genomics output folder, or a folder containing the files 'barcodes.tsv.gz', ",
                     "'features.tsv.gz' and 'matrix.mtx.gz'.<br><br>"),
   Load_help2=paste0("Select an excel file or a plaint text table ('.csv', '.tsv', '.txt') with extra cell information. ",

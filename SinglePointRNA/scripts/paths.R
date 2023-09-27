@@ -135,6 +135,7 @@ paths_getBG <- function( inputData, DEparams, DEtabs, laxBG=TRUE ){
     
         if( deMode=="1 VS rest" ){
           i <- levels( groupList )[ i ]
+          
           inputData$groups[ inputData$groups !=i ] <- "Other"
           g <- rownames(inputData)[ ! rownames(inputData) %in% genesNoTest ]
           g <- AverageExpression(
@@ -429,12 +430,17 @@ paths_likertPlots <- function( DEtabs, DEparams, bg_genes, pathwayEnrichment,
     if( deMode %in% c( "Conditional", "1 VS 1" ) ){
       pldf <- data.frame(
         Comparison = names( DEtabs ), 
-        "Up_regulated in group A" = sapply( degs, "[[", 1),
+        "Up_regulated in" = sapply( degs, "[[", 1),
         "Not Differentially expressed" = sapply( degs, "[[", 2),
-        "Up_regulated in group B" = sapply( degs, "[[", 3)
+        "Up_regulated in " = sapply( degs, "[[", 3)
       )
       colnames(pldf) <- gsub( "\\.", " ", colnames(pldf) )
       colnames(pldf) <- gsub( "_", "-", colnames(pldf) )
+      
+      gr <- strsplit(plotComp, split = " VS ")[[1]]
+      colnames(pldf)[2] <- paste0( colnames(pldf)[2], " ", gr[1] )
+      colnames(pldf)[4] <- paste0( colnames(pldf)[4], " ", gr[2] )
+      
       HH::likert( Comparison ~ . , data=pldf, ylab=NULL, as.percent=FALSE,
         main = list( paste0( "Differential expression in ", gsub("_", " ", plotPath ) ) ),
         sub= list( paste0( "Only genes expressed in >",min.ptc,"% of cells are counted"))
@@ -449,6 +455,12 @@ paths_likertPlots <- function( DEtabs, DEparams, bg_genes, pathwayEnrichment,
       )
       colnames(pldf) <- gsub( "\\.", " ", colnames(pldf) )
       colnames(pldf) <- gsub( "_", "-", colnames(pldf) )
+      
+      gr <- strsplit(plotComp, split = " VS ")[[1]]
+      
+      colnames(pldf)[2] <- paste0( colnames(pldf)[2], " ", gr[1] )
+      colnames(pldf)[4] <- paste0( colnames(pldf)[4], " ", gr[1] )
+      
       HH::likert( Comparison ~ . , data=pldf, ylab=NULL, as.percent=FALSE,
         main = list( paste0( "DE in ", gsub("_", " ", plotPath ) ) ),
         sub= list( paste0( "Only genes expressed in >",min.ptc,"% of cells are counted"))
@@ -481,12 +493,17 @@ paths_likertPlots <- function( DEtabs, DEparams, bg_genes, pathwayEnrichment,
       
       pldf <- data.frame(
         Pathway = paths_wrapLabels( plotPath ), 
-        "Up_regulated in group A" = sapply( degs, "[[", 1),
+        "Up_regulated in" = sapply( degs, "[[", 1),
         "Not Differentially expressed" = sapply( degs, "[[", 2),
-        "Up_regulated in group B" = sapply( degs, "[[", 3)
+        "Up_regulated in " = sapply( degs, "[[", 3)
       )
       colnames(pldf) <- gsub( "\\.", " ", colnames(pldf) )
       colnames(pldf) <- gsub( "_", "-", colnames(pldf) )
+      
+      gr <- strsplit(plotComp, split = " VS ")[[1]]
+      
+      colnames(pldf)[2] <- paste0( colnames(pldf)[2]," ", gr[1] )
+      colnames(pldf)[4] <- paste0( colnames(pldf)[4], " ",  gr[2] )
       
       HH::likert( Pathway ~ . , data=pldf, ylab=NULL, as.percent=FALSE,
                   main = list( paste0( "Altered pathways in ", gsub("_", " ", plotComp ) ) ),
@@ -496,12 +513,17 @@ paths_likertPlots <- function( DEtabs, DEparams, bg_genes, pathwayEnrichment,
 
       pldf <- data.frame(
         Pathway = paths_wrapLabels( plotPath ), 
-        "Up_regulated in foreground" = sapply( degs, "[[", 1),
+        "Up_regulated in " = sapply( degs, "[[", 1),
         "Not Differentially expressed" = sapply( degs, "[[", 2),
-        "Down regulated in foreground" = sapply( degs, "[[", 3)
+        "Down regulated in " = sapply( degs, "[[", 3)
       )
       colnames(pldf) <- gsub( "\\.", " ", colnames(pldf) )
       colnames(pldf) <- gsub( "_", "-", colnames(pldf) )
+      
+      gr <- strsplit(plotComp, split = " VS ")[[1]]
+      
+      colnames(pldf)[2] <- paste0( colnames(pldf)[2], " ", gr[1] )
+      colnames(pldf)[4] <- paste0( colnames(pldf)[4], " ", gr[1] )
       
       HH::likert( Pathway ~ . , data=pldf, ylab=NULL, as.percent=FALSE,
                   main = list( paste0( "Altered pathways in ", gsub("_", " ", plotComp ) ) ),

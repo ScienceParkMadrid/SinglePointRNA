@@ -22,9 +22,9 @@ gen_save <- function( inputData=NULL, tabs = NULL, type="meta", f_name=NULL ){
       content = function(file){ saveRDS( inputData, file )}
     )
   } else if ( type=="tables" ){
-
+    
     if( is.data.frame( tabs ) ){ # single tab
-      if( suppressWarnings( sum( is.na( as.integer( rownames( tabs ) ) ) ) ) ==0 ) {
+      if( suppressWarnings( all( sort(rownames( tabs[[i]]) == 1:nrow(tabs[[i]]) ) ) ) ) {
         #keep rownames only if they are informative
         rNames=FALSE } else { rNames=TRUE }
       
@@ -33,14 +33,14 @@ gen_save <- function( inputData=NULL, tabs = NULL, type="meta", f_name=NULL ){
         content = function(file){write.csv( tabs, file, row.names = rNames, col.names = TRUE)}
       )
     } else { # list of tables
-
+      
       xls_file <- createWorkbook()
       lapply( 
         seq_along( tabs ),
         function(i){
           if( !is.null( tabs[[i]] ) ){ # if an element is null, skip it
             
-            if( suppressWarnings( sum( is.na( as.integer( rownames( tabs[[i]] ) ) ) ) ) ==0 ) {
+            if( suppressWarnings( all( sort(rownames( tabs[[i]]) == 1:nrow(tabs[[i]]) ) ) ) ) {
               #keep rownames only if they are informative
               rNames=FALSE } else { rNames=TRUE }
             
@@ -54,10 +54,10 @@ gen_save <- function( inputData=NULL, tabs = NULL, type="meta", f_name=NULL ){
         content = function(file){ saveWorkbook( xls_file, file )}
       )
     }
-   
-   
+    
+    
   }
- 
+  
 }
 
 gen_noDataNotif <- function( inputData, loading=FALSE ){
@@ -66,12 +66,12 @@ gen_noDataNotif <- function( inputData, loading=FALSE ){
   
   if( is.null( inputData ) & !loading ){
     showNotification("No dataset loaded!",
-    duration = 20, type="error", id="gen_noData" )    
+                     duration = 20, type="error", id="gen_noData" )    
   } 
   
   if( is.null( inputData ) & loading){
     showNotification("Select dataset files first",
-      duration = 20, type="error", id="gen_noData" )    
+                     duration = 20, type="error", id="gen_noData" )    
   } 
 }
 
@@ -85,7 +85,7 @@ gen_loadGeneLists <- function( IDformat, section ){
   #    - 'CC': cell cycle genes
   #    - 'Rb.Mt': mitocondrial and ribosomal genes
   #    - 'pathways': Pathway databases
-
+  
   if( section=="patterns" ){
     folder <- "data/GenePatterns/"
   } else if( section=="CC" ){
@@ -109,7 +109,7 @@ gen_loadGeneLists <- function( IDformat, section ){
   geneList <- lapply( 
     flist,
     function(i){
-
+      
       l <- readLines( paste0( folder ,i), skipNul = TRUE )
       l <- l[ !grepl( "^#", l ) & !grepl( "^$", l ) ]
       lName <- sapply( strsplit( l, ": "  ), "[[", 1 )
@@ -170,7 +170,7 @@ updButtonStates <- function( input, section, btnState ){
     return( list( bSts= currentButtons, btn=NULL ) )
     
   } else {
-                  # if the change is triggered by a button being clicked on
+    # if the change is triggered by a button being clicked on
     if( all( names( currentButtons ) %in% names(btnState) ) ){ 
       btn <- names(currentButtons)[ which( currentButtons != btnState ) ]
       if( length( btn ) == 0 ){ btn <- NULL }

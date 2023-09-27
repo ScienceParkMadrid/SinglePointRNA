@@ -1,6 +1,7 @@
 
 # Loading packages and Sourcing scripts ----
 library( shiny )
+library( shinyjs )
 library( shinydashboard )
 library( shinyFiles )
 library( dplyr )
@@ -27,6 +28,7 @@ sapply(  dir("scripts",full.names = T), source )
 
 # UI SIDE ----
 ui <- dashboardPage( 
+
   title = "SinglePoint - scRNA-seq analysis GUI",
   
   dashboardHeader(
@@ -70,6 +72,8 @@ ui <- dashboardPage(
   ),
   
   dashboardBody(
+    useShinyjs(),
+    
     tags$head(tags$link(rel="shortcut icon", href="browserIcon.ico")),
     
     tabItems(
@@ -148,8 +152,11 @@ ui <- dashboardPage(
             "Load_DEG", "Select File", "Differential gene expression (Excel / RDS)", multiple = FALSE,
             viewtype = "detail"),
           HTML("<br><br>"),
+          
           actionButton("Load_run", "Load dataset", icon = icon("upload"),
             style="color: #fff; background-color: #3c8dbc; border-color: #015e95") ,
+          actionButton("refresh_button", "Reset the app" , icon = icon("arrows-rotate"),
+            style="color: #fff; background-color: #3c8dbc; border-color: #015e95"),
           p(),p(),
           uiOutput( "Load_doneText" ),
           uiOutput( "Load_summ" ),
@@ -261,7 +268,7 @@ ui <- dashboardPage(
             column(4,HTML("<h4>Normalization and variance stabilization:</h4>")),
             column(1, helpButton("Filter_help3")) ),
           radioButtons( "Filter_normMode", "", inline = T,
-            choiceNames = c( "None", "Lognormalization", "SCTrasnform"),
+            choiceNames = c( "None", "Lognormalization", "SCTransform"),
             choiceValues = c( "None", "logNorm", "SCT")
           ), 
           fluidRow(
@@ -332,6 +339,8 @@ ui <- dashboardPage(
           uiOutput("Merge_mergeOpts_2"),
           actionButton( "Merge_run", "Merge datasets" ,
             style="color: #fff; background-color: #3c8dbc; border-color: #015e95"),
+          actionButton("refresh_button2", "Reset the app" , icon = icon("arrows-rotate"),
+                       style="color: #fff; background-color: #3c8dbc; border-color: #015e95"),
           uiOutput("Merge_ProgressText"),
           uiOutput( "Merge_inputTable" ) 
         ),
@@ -800,6 +809,8 @@ server <- function(input, output, session) {
     gen_Msg$currentData <- gen_currentData( inputDataset$Seurat )
   })
   
+  observeEvent( input$refresh_button, { shinyjs::refresh() })
+  observeEvent( input$refresh_button2, { shinyjs::refresh() })
   # Set user paths
   volumes <- c(Home = fs::path_home(), "R Installation" = R.home(), getVolumes()())
   
@@ -864,6 +875,10 @@ server <- function(input, output, session) {
   })
   
   observeEvent( input$Load_run, {
+    
+    showNotification( 
+      HTML("Loading data<br>Please wait..."),
+      duration = 20, type="message", id="Load_busy" )    
     anyFile <- any(c(
       !is.integer( input$Load_inputFile ),
       !is.integer( input$Load_inputDir ) ) )
@@ -1108,7 +1123,7 @@ server <- function(input, output, session) {
   observeEvent( input$Filter_run, {
     if( !is.null( inputDataset$Seurat )){
       showNotification( id = "filter_busy",
-        HTML( paste0( "Filtering cells and nomalizing expression values.<br>",
+        HTML( paste0( "Filtering cells and normalizing expression values.<br>",
               "This might take a while...")),type = "message",duration = NULL) 
       
       Filter_check$Filters <- Filter_filterCells(
@@ -1127,7 +1142,7 @@ server <- function(input, output, session) {
   observeEvent( Filter_check$Filters,{
     output$Filter_numVarsCheck <- renderUI({ renderTable({
       Filter_check$Filters[["Summary"]][["Numeric"]]
-    }, caption="Numeric fiters" ) })
+    }, caption="Numeric filters" ) })
     output$Filter_catVarsCheck <- renderUI({ renderTable({
       Filter_check$Filters[["Summary"]][["Categoric"]]
     }, caption="Categorical filters") })
@@ -1183,7 +1198,7 @@ server <- function(input, output, session) {
       
       output$Merge_mergeNormMode <- renderUI({ # remove "none" as an option for normalization
         radioButtons( "Merge_mergeNormMode", "", inline = T,
-        choiceNames = c( "Lognormalization", "SCTrasnform"), choiceValues = c( "logNorm", "SCT") ) })
+        choiceNames = c( "Lognormalization", "SCTransform"), choiceValues = c( "logNorm", "SCT") ) })
       
       output$Merge_mergeOpts_2 <- renderUI({ # change number of anchors to 3K if SCT
         if( input$Merge_mergeNormMode == "SCT"){
@@ -1193,7 +1208,7 @@ server <- function(input, output, session) {
       })
     } else {
       output$Merge_mergeNormMode <- renderUI({ radioButtons( "Merge_mergeNormMode", "", inline = T, 
-        choiceNames = c( "None", "Lognormalization", "SCTrasnform"), 
+        choiceNames = c( "None", "Lognormalization", "SCTransform"), 
         choiceValues = c( "None", "logNorm", "SCT") )
         })
     }
@@ -1786,7 +1801,7 @@ server <- function(input, output, session) {
   output$DiffExp_mode <- renderUI({
     radioButtons(
       "DiffExp_mode", label = '', selected = "1 VS rest",
-      choices =  c("1 VS rest", "1 VS 1" ) ) # when implemented, add meta-analyisis option
+      choices =  c("1 VS rest", "1 VS 1" ) ) 
   })
   
   observeEvent( inputDataset$Seurat, {
@@ -1809,11 +1824,12 @@ server <- function(input, output, session) {
     }
   })
   observeEvent( input$DiffExp_Grouping2,{
-    if(!is.null(input$DiffExp_Grouping2) & input$DiffExp_Grouping2 != "None" ){
+    if(!is.null(input$DiffExp_Grouping2) & input$DiffExp_Grouping2 != "None" &
+       input$DiffExp_Grouping1 != "None" ){
       output$DiffExp_mode <- renderUI({
         radioButtons(
           "DiffExp_mode", label = '', selected = "1 VS rest",
-          choices =  c("1 VS rest", "1 VS 1", "Conditional" ) ) # when implemented, add meta-analyisis option
+          choices =  c("1 VS rest", "1 VS 1", "Conditional" ) ) 
       })
     } else {
       radioButtons(
@@ -1823,9 +1839,13 @@ server <- function(input, output, session) {
     
   })
   
-  observeEvent( input$DiffExp_mode,{
-    if( input$DiffExp_mode =="1 VS 1" & !is.null(inputDataset$Seurat) ){
+  observeEvent( c(input$DiffExp_mode, input$DiffExp_Grouping1 ),{
+    
+    if(!is.null(inputDataset$Seurat) & 
+       all(!is.null( input$DiffExp_Grouping1 ) & input$DiffExp_Grouping1!= "None") ){
+      if( input$DiffExp_mode =="1 VS 1" ){
       output$DiffExp_uiText2 <- renderUI( HTML( "<br>(Optional) Choose two groups to compare:" ) )
+      
       if( is.null(input$DiffExp_Grouping2) | input$DiffExp_Grouping2 == "None" ){
         subgroup_choices <- unique( inputDataset$Seurat@meta.data[[ input$DiffExp_Grouping1 ]] )
       } else {
@@ -1837,18 +1857,21 @@ server <- function(input, output, session) {
         c( "None", subgroup_choices ), selected="None", multiple = FALSE ) })
       output$DiffExp_1v1bg <- renderUI({selectInput( 'DiffExp_1v1bg', '', 
         "None", selected="None", multiple = FALSE ) })
-    } else if( input$DiffExp_mode =="Conditional" & !is.null(inputDataset$Seurat)  ){
-      output$DiffExp_uiText2 <- renderUI( HTML( paste0(
-        "<br>(Optional) Select a foreground value for '", input$DiffExp_Grouping1, "': ")))
-      subgroup_choices <- unique( inputDataset$Seurat@meta.data[[ input$DiffExp_Grouping1 ]] )
-      output$DiffExp_1v1fg <- renderUI({selectInput( 'DiffExp_1v1fg', '', 
-        c( "None", subgroup_choices ), selected="None", multiple = FALSE ) })
-      output$DiffExp_1v1bg <- NULL 
-    }else {
-      output$DiffExp_uiText2 <- NULL
-      output$DiffExp_1v1fg <- NULL
-      output$DiffExp_1v1bg <- NULL 
-    }
+      } else if( input$DiffExp_mode =="Conditional" ){
+        output$DiffExp_uiText2 <- renderUI( HTML( paste0(
+          "<br>(Optional) Select a foreground value for '", input$DiffExp_Grouping1, "': ")))
+        subgroup_choices <- unique( inputDataset$Seurat@meta.data[[ input$DiffExp_Grouping1 ]] )
+        output$DiffExp_1v1fg <- renderUI({selectInput( 'DiffExp_1v1fg', '', 
+           c( "None", subgroup_choices ), selected="None", multiple = FALSE ) })
+        output$DiffExp_1v1bg <- NULL 
+      }else {
+        output$DiffExp_uiText2 <- NULL
+        output$DiffExp_1v1fg <- NULL
+        output$DiffExp_1v1bg <- NULL 
+      }
+    }  
+      
+      
   }, ignoreInit = TRUE )
   
   observeEvent( input$DiffExp_1v1fg, {
@@ -1897,7 +1920,7 @@ server <- function(input, output, session) {
     ### d3: outputs ----
   observeEvent( c(diffExpr$Tables,inputDataset$Seurat), {
     
-    if(!is.null( diffExpr$Tables )  ){
+    if(!is.null( diffExpr$Tables ) & !is.null(inputDataset$Seurat) ){
       
       if( is.null( diffExpr$Summary ) & !is.null(inputDataset$Seurat)){ # DE loaded from file
         diffExpr$Summary <- DiffExpr_summary(
@@ -1910,6 +1933,7 @@ server <- function(input, output, session) {
           m1v1bg = diffExpr$Parameters["Background group",]
         )
       }
+      
       colnames(diffExpr$Summary ) <- gsub( "\\.", " ", colnames(diffExpr$Summary) )
       
       output$DiffExpr_resText1 <- renderUI(
@@ -1932,9 +1956,6 @@ server <- function(input, output, session) {
       }
      
     }
-    
-    
-    
   } )
   
   observeEvent( input$DiffExpr_resGroupSel, {
@@ -2176,10 +2197,15 @@ server <- function(input, output, session) {
         "This might take a while...")),type = "message",duration = NULL) 
       
       if( input$cType_mode == 1 ){ # scCATCH
-        cType_markers$results <- run_cellType( 
+        errorCheck <- cType_checkGenes( inputDataset$Seurat, auto_markers=input$cType_m1subtissues, iDsum=iD_summary$Table )
+        
+        if(errorCheck != "scCATCH_lowMarker"){
+          cType_markers$results <- run_cellType( 
           inputDataset$Seurat, 1, input$cType_plot, input$cType_GroupVar, 
           m1_species = iD_summary$Table$Species[1], m1_tissue = input$cType_m1subtissues )
         inputDataset$Seurat <- AddMetaData( inputDataset$Seurat, cType_markers$results$cell.metaData)
+        }
+        
         
       } else if( input$cType_mode == 2  ){ # manual annotation
         

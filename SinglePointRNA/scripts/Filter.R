@@ -27,13 +27,15 @@ Filter_updateUIvals <- function( inputData, projectName ){
     "Dataset: ", projectName, " - ", ncol(inputData), " cells." ) } )
   
   dataRange <- list(
-    counts=range( inputData$nCount_RNA ), 
-    feats=range( inputData$nFeature_RNA ) 
+    counts=range( inputData$nCount_RNA, na.rm = T, finite=F ), 
+    feats=range( inputData$nFeature_RNA ,na.rm = T, finite=F ) 
   )
   if( "percent.mt" %in% colnames(inputData@meta.data) ){ 
-    dataRange$mt=range(inputData$percent.mt, na.rm = T ) } else {dataRange$mt = c(0,100) }
+    dataRange$mt=range(inputData$percent.mt, na.rm = T, finite=F ) 
+    } else {dataRange$mt = c(0,100) }
   if( "percent.ribo" %in% colnames(inputData@meta.data) ){ 
-    dataRange$ribo=range( inputData$percent.ribo, na.rm = T )} else {dataRange$ribo = c(0,100) }
+    dataRange$ribo=range( inputData$percent.ribo, na.rm = T, finite=F )
+    } else {dataRange$ribo = c(0,100) }
   
   # basic filters:
   rangeCount <- renderText( {paste0(
@@ -124,7 +126,7 @@ Filter_updateUIvals_extra <- function(
   } else { catRmVal <- renderUI( selectInput('Filter_numVariableRm', '', "None" )) }
   
   if( NumKeep != "None" ){
-    varRange <- range( inputData@meta.data[[ NumKeep ]], na.rm = T )
+    varRange <- range( inputData@meta.data[[ NumKeep ]], na.rm = T, finite=F )
     numKeepVal <- list(
       min = renderUI( numericInput( "Filter_numValue_minKeep",
         'Min:', min = varRange[1], max=varRange[2], value = varRange[1] )),
@@ -136,7 +138,7 @@ Filter_updateUIvals_extra <- function(
     max=renderUI( numericInput('Filter_numValue_maxKeep', '', min=NA, max=NA, value=NA, width = "150px" ))) } 
   
   if( NumRm != "None" ){
-    varRange <- range( inputData@meta.data[[ NumRm ]], na.rm = T )
+    varRange <- range( inputData@meta.data[[ NumRm ]], na.rm = T, finite=F )
     numRmVal <- list(
       min = renderUI( numericInput( "Filter_numValue_minRm",
         'Min:', min = varRange[1], max=varRange[2], value = varRange[1] )),

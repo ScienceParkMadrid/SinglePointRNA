@@ -361,11 +361,11 @@ load_addDEG <- function( degPath  ){
     sheets <- excel_sheets( degPath )
     params <- which( sheets == "Parameters" )
     deg <- which( sheets != "Parameters" )
-    
+   
     paramsTab <- as.data.frame( suppressMessages( read_excel( degPath, sheet = params )) )
     rownames( paramsTab ) <- paramsTab[,1]
     paramsTab <- paramsTab[, -1, drop=F ]
-    
+
     degTab <- lapply(
       deg,
       function(i){

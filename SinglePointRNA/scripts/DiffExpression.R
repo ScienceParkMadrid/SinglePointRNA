@@ -1,7 +1,7 @@
 run_DiffExp <- function( inputData, Var1, Var2 = NULL, mode = "1 VS rest", 
                          m1v1fg = NULL, m1v1bg = NULL, min.pct = 0.25, minLFC = 0.5, 
                          minCells = 20, rmMitoG =TRUE, rmRiboG = TRUE
-                          ){
+){
   # Main function to calculate diferential expression
   ## ins:
   # -  inputData: input dataset, Seurat Object
@@ -35,11 +35,11 @@ run_DiffExp <- function( inputData, Var1, Var2 = NULL, mode = "1 VS rest",
   # drop empty levels of the grouping variables
   if(! is.null ( Var1 ) ){
     if( is.factor( inputData[[ Var1 ]][,1] )){
-    inputData[[ Var1 ]][,1] <- droplevels( inputData[[ Var1 ]][,1]  )  } }
+      inputData[[ Var1 ]][,1] <- droplevels( inputData[[ Var1 ]][,1]  )  } }
   if(! is.null ( Var2 ) ){
     if( is.factor( inputData[[ Var2 ]][,1]) ) {
-    inputData[[ Var2 ]][,1] <- droplevels( inputData[[ Var2 ]][,1]  )   }}
-
+      inputData[[ Var2 ]][,1] <- droplevels( inputData[[ Var2 ]][,1]  )   }}
+  
   inputData <- DiffExpr_cellIdent( inputData, Var1, Var2 )
   groups <- sort( unique( inputData$groups ) )
   
@@ -49,40 +49,40 @@ run_DiffExp <- function( inputData, Var1, Var2 = NULL, mode = "1 VS rest",
   
   # set features of interest
   feats <- rownames( inputData )
-
+  
   if( rmMitoG | rmRiboG ){ feats <- DiffExpr_rmFeats( feats, rmMitoG, rmRiboG ) }
-
+  
   groupList <- DiffExpr_setComparisons( inputData, mode, Var1, Var2, m1v1fg, m1v1bg )
   
   markers <- lapply(
     groupList,
     function(i, ptc, cellDistr ){
       groups <- as.character( unlist(i) )
-
+      
       if( all( cellDistr[ groups ] > minCells ) ){
         mark <- FindMarkers( inputData, ident.1= i$fg , ident.2=i$bg, min.pct=min.pct,
-          features = feats, logfc.threshold =minLFC, assay = defAssay  )
-       
+                             features = feats, logfc.threshold =minLFC, assay = defAssay  )
+        
       } else { NULL }
-
+      
     }, ptc=min.pct, cellDistr = table(inputData$groups)
   )
   names(markers) <- sapply( groupList, function(i){
     if( is.null( i$bg) ){ i$bg <- "rest"}
     paste0( i$fg, " VS ", i$bg ) } )
-
+  
   # Make parameter table
   if( is.null(Var2) ){ Var2 <- "None" }
   if( is.null(m1v1fg) ){ m1v1fg <- "None" }
   if( is.null(m1v1bg) ){ m1v1bg <- "None" }
   params <- data.frame(
-     Value=c( inputData@project.name, Var1, Var2, mode, m1v1fg, m1v1bg, min.pct, minCells, minLFC,
-      rmMitoG, rmRiboG),
+    Value=c( inputData@project.name, Var1, Var2, mode, m1v1fg, m1v1bg, min.pct, minCells, minLFC,
+             rmMitoG, rmRiboG),
     row.names = 
-     c("Dataset", "Grouping Variable", "Secondary grouping variable", "Mode of comparison",
-      "Foreground group", "Background group", "Minimum % of cells expressing a gene",
-      "Minimum of cells per group", "Minimum Log2FC", "Discard mitocondrial genes",
-      "Discard ribosomal genes")
+      c("Dataset", "Grouping Variable", "Secondary grouping variable", "Mode of comparison",
+        "Foreground group", "Background group", "Minimum % of cells expressing a gene",
+        "Minimum of cells per group", "Minimum Log2FC", "Discard mitocondrial genes",
+        "Discard ribosomal genes")
   )
   params <- params[ params$Value != "None", , drop=FALSE]
   
@@ -137,7 +137,7 @@ DiffExpr_rmFeats <- function( feats, rmMitoG, rmRiboG, rmOtherG=NULL ){
   }
   if( !is.null(rmOtherG) ){ feats <- feats[ ! feats %in% rmOtherG ] }
   
-
+  
   return(feats)
 }
 
@@ -157,7 +157,7 @@ DiffExpr_cellIdent <- function( inputData, Var1, Var2 = NULL, m1v1fg = NULL ){
     inputData <- subset( inputData, cells=colnames(inputData)[ keep ] )
     inputData[["groups"]] <- paste0( 
       inputData@meta.data[[ Var1 ]], " - ", inputData@meta.data[[ Var2 ]] )
-
+    
   } else { 
     keep <- !is.na( inputData[[Var1]] )
     inputData <- subset( inputData, cells=colnames( inputData )[ keep ] )
@@ -174,7 +174,7 @@ DiffExpr_sortGroups <- function( x ){
   
   if (is.factor(x)){ x <- as.character(x) }
   x <- unique(x)
-
+  
   if( all( !is.na( as.numeric( x ) ) ) ){ # if group names are numbers
     x_levels <- sort( as.numeric( x ) )
   } else {
@@ -395,7 +395,7 @@ DiffExpr_summary <- function( inputData, markers, Var1=NULL, Var2=NULL,
   if( ! "groups" %in% colnames( inputData@meta.data )){
     inputData <- DiffExpr_cellIdent( inputData, Var1, Var2 )
   }
- 
+  
   cellsPerGroup <- table( inputData@meta.data$groups )
   
   if( is.null(groupList) ){
@@ -423,10 +423,10 @@ DiffExpr_summary <- function( inputData, markers, Var1=NULL, Var2=NULL,
   } else {
     sumTab$Cells.in.Background <-  as.integer( cellsPerGroup[ sapply(groupList, "[[", "bg" ) ] )
   }
-   
+  
   sumTab[( sumTab$Cells.in.Foreground < minCells |
-    sumTab$Cells.in.Background < minCells), 4:6 ]  <- NA
-
+             sumTab$Cells.in.Background < minCells), 4:6 ]  <- NA
+  
   return( sumTab )
 }
 
